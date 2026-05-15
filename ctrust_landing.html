@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>CBI &amp; RBI AI Advisor | Find the Best Citizenship or Residency by Investment Program — CTrustGlobal</title>
+<meta name="description" content="Discover which Citizenship by Investment or Residency by Investment program may best match your travel, family, business, relocation, and wealth-planning goals."/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Mulish:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#0A1628;
+  --navy2:#0F1E38;
+  --navy3:#162540;
+  --navy4:#1C2E50;
+  --gold:#C9A84C;
+  --gold2:#E8D5A0;
+  --gold3:rgba(201,168,76,0.18);
+  --gold4:rgba(201,168,76,0.08);
+  --white:#FFFFFF;
+  --ivory:#F5F1E8;
+  --text:#E8E4DC;
+  --muted:#8A9BB5;
+  --border:rgba(201,168,76,0.22);
+  --card-bg:rgba(255,255,255,0.04);
+  --r:6px;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Mulish',sans-serif;background:var(--navy);color:var(--text);overflow-x:hidden;line-height:1.6}
+
+/* ═══ NAV ════════════════════════════════════════════ */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,22,40,0.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav-logo{display:flex;align-items:center;gap:10px}
+.nav-logo-icon{width:28px;height:28px;background:var(--gold);border-radius:4px;display:flex;align-items:center;justify-content:center}
+.nav-logo-icon svg{width:16px;height:16px;fill:var(--navy)}
+.nav-logo-text{font-family:'Playfair Display',serif;font-size:16px;font-weight:500;color:var(--white);letter-spacing:0.02em}
+.nav-logo-sub{font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);display:block;margin-top:-2px}
+.nav-links{display:flex;align-items:center;gap:28px}
+.nav-links a{font-size:13px;color:var(--muted);text-decoration:none;font-weight:400;transition:color .2s}
+.nav-links a:hover{color:var(--text)}
+.nav-links .has-arrow::after{content:' ▾';font-size:10px}
+.nav-cta{background:var(--gold);color:var(--navy);padding:10px 22px;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;border:none;border-radius:var(--r);cursor:pointer;transition:all .2s;text-decoration:none}
+.nav-cta:hover{background:var(--gold2)}
+
+/* ═══ HERO ═══════════════════════════════════════════ */
+#hero{
+  min-height:100vh;
+  padding:120px 80px 80px;
+  display:flex;align-items:center;justify-content:space-between;gap:60px;
+  position:relative;overflow:hidden;
+  background:linear-gradient(135deg,#0A1628 0%,#0F1E38 40%,#0D1F3C 70%,#0A1628 100%);
+}
+.hero-bg{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 60% 60% at 70% 50%,rgba(201,168,76,0.08) 0%,transparent 65%),
+    radial-gradient(ellipse 40% 30% at 10% 90%,rgba(201,168,76,0.05) 0%,transparent 60%);
+}
+.hero-grid-lines{
+  position:absolute;inset:0;
+  background-image:linear-gradient(rgba(201,168,76,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(201,168,76,0.04) 1px,transparent 1px);
+  background-size:60px 60px;
+  mask-image:radial-gradient(ellipse 70% 80% at 60% 50%,black 0%,transparent 80%);
+}
+.hero-left{flex:1;max-width:580px;position:relative;z-index:2}
+.hero-eyebrow{font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;font-weight:500}
+.hero-h1{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,48px);font-weight:500;line-height:1.15;color:var(--white);margin-bottom:20px}
+.hero-h1 em{font-style:italic;color:var(--gold)}
+.hero-sub{font-size:15px;color:var(--muted);font-weight:300;line-height:1.7;margin-bottom:32px;max-width:500px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:32px}
+.btn-primary{background:var(--gold);color:var(--navy);padding:14px 28px;font-family:'Mulish',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;border:none;border-radius:var(--r);cursor:pointer;transition:all .2s}
+.btn-primary:hover{background:var(--gold2);transform:translateY(-1px)}
+.btn-outline{background:transparent;color:var(--text);padding:14px 28px;font-family:'Mulish',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;border:1px solid var(--border);border-radius:var(--r);cursor:pointer;transition:all .2s}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+.hero-trust-micro{font-size:11px;color:var(--muted);font-style:italic;margin-bottom:28px}
+.hero-badges{display:flex;gap:24px;flex-wrap:wrap}
+.hero-badge{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--muted);font-weight:400}
+.badge-icon{width:18px;height:18px;border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:9px}
+/* Hero right: laptop mockup with advisor widget */
+.hero-right{flex:0 0 520px;position:relative;z-index:2}
+.laptop-mockup{position:relative;background:linear-gradient(145deg,#1a1a2e,#16213e);border-radius:12px;padding:20px;box-shadow:0 40px 80px rgba(0,0,0,0.6),0 0 0 1px rgba(201,168,76,0.15)}
+.laptop-screen{background:#0a0a1a;border-radius:8px;padding:16px;position:relative;overflow:hidden}
+.laptop-screen::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),transparent)}
+.laptop-base{height:8px;background:linear-gradient(180deg,#2a2a3e,#1a1a2e);border-radius:0 0 4px 4px;margin-top:-2px}
+.laptop-notch{width:60px;height:4px;background:#0a0a1a;border-radius:0 0 4px 4px;margin:0 auto}
+.advisor-widget{background:rgba(22,37,64,0.9);border:1px solid var(--border);border-radius:8px;padding:20px;backdrop-filter:blur(10px)}
+.aw-header{display:flex;align-items:center;gap:10px;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--border)}
+.aw-logo{width:28px;height:28px;background:var(--gold);border-radius:6px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:12px;color:var(--navy);font-weight:700}
+.aw-title{font-family:'Playfair Display',serif;font-size:12px;color:var(--white);font-weight:500}
+.aw-sub{font-size:9px;color:var(--gold);letter-spacing:0.12em;text-transform:uppercase}
+.aw-q{font-size:12px;color:var(--text);margin-bottom:12px;font-weight:400}
+.aw-options{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px}
+.aw-opt{display:flex;align-items:center;gap:8px;padding:8px 10px;background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:var(--r);font-size:10px;color:var(--text);cursor:pointer;transition:all .2s}
+.aw-opt:hover,.aw-opt.sel{border-color:var(--gold);background:rgba(201,168,76,0.1)}
+.aw-opt-icon{width:24px;height:24px;background:var(--gold3);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;flex-shrink:0}
+.aw-progress{height:2px;background:rgba(255,255,255,0.08);border-radius:2px;margin-bottom:6px}
+.aw-progress-fill{height:100%;width:25%;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:2px}
+.aw-prog-text{font-size:9px;color:var(--muted);text-align:right}
+.hero-passport{position:absolute;bottom:-20px;right:-40px;width:120px;height:160px;background:linear-gradient(135deg,#1a3a5c,#0d2040);border-radius:4px;transform:rotate(-15deg);box-shadow:0 20px 40px rgba(0,0,0,0.5);border:1px solid rgba(201,168,76,0.2)}
+.hero-passport::before{content:'PASSPORT';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:8px;letter-spacing:0.2em;color:var(--gold);font-weight:600}
+.hero-compass{position:absolute;bottom:20px;right:-60px;width:80px;height:80px;border:2px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;opacity:0.6}
+.hero-compass::before{content:'✦';font-size:24px;color:var(--gold)}
+
+/* ═══ TRUST BAR ══════════════════════════════════════ */
+#trust-bar{background:var(--white);padding:48px 80px}
+.trust-bar-headline{text-align:center;margin-bottom:8px;font-family:'Playfair Display',serif;font-size:20px;color:#0A1628;font-weight:500}
+.trust-bar-sub{text-align:center;font-size:13px;color:#5A6A80;margin-bottom:36px;max-width:600px;margin-inline:auto}
+.trust-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.trust-card{text-align:center;padding:24px 16px}
+.tc-icon{width:40px;height:40px;background:rgba(201,168,76,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-size:16px}
+.tc-title{font-family:'Playfair Display',serif;font-size:14px;color:#0A1628;margin-bottom:6px;font-weight:500}
+.tc-text{font-size:12px;color:#6A7A90;line-height:1.6;font-weight:300}
+
+/* ═══ PROBLEM / HOOK ════════════════════════════════ */
+#problem{
+  padding:60px 80px;
+  display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;
+  background:linear-gradient(135deg,var(--navy2) 0%,var(--navy3) 100%);
+  position:relative;overflow:hidden;
+}
+#problem::before{content:'';position:absolute;top:-100px;right:-100px;width:400px;height:400px;border:1px solid var(--border);border-radius:50%;opacity:0.3}
+#problem::after{content:'';position:absolute;bottom:-80px;right:80px;width:240px;height:240px;border:1px solid var(--border);border-radius:50%;opacity:0.2}
+.problem-left h2{font-family:'Playfair Display',serif;font-size:clamp(24px,3vw,36px);color:var(--white);font-weight:500;line-height:1.2;margin-bottom:20px}
+.problem-left p{font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:14px;font-weight:300}
+.problem-cta-strip{margin-top:28px}
+.problem-cta-strip p{font-size:13px;color:var(--gold2);font-style:italic;margin-bottom:12px}
+.problem-right{position:relative;z-index:1}
+.problem-img-frame{border:1px solid var(--border);border-radius:12px;overflow:hidden;aspect-ratio:16/9;background:linear-gradient(135deg,#0D2040 0%,#1A3A60 50%,#0D2040 100%);display:flex;align-items:flex-end;justify-content:center;padding:30px;position:relative}
+.problem-img-frame::before{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,22,40,0.8) 0%,transparent 60%)}
+.problem-silhouette{position:absolute;bottom:20px;right:40px;width:120px;height:200px;background:linear-gradient(0deg,rgba(10,22,40,0.9) 0%,transparent 100%);clip-path:polygon(30% 100%,35% 60%,32% 40%,38% 25%,42% 15%,45% 20%,48% 10%,52% 10%,55% 20%,58% 15%,62% 25%,68% 40%,65% 60%,70% 100%);opacity:0.8}
+.problem-city{position:absolute;bottom:0;left:0;right:0;height:80px;background:linear-gradient(0deg,rgba(201,168,76,0.08),transparent);border-top:1px solid rgba(201,168,76,0.1)}
+.problem-cityline{position:absolute;bottom:0;left:0;right:0;height:60px;display:flex;align-items:flex-end;justify-content:center;gap:4px;padding:0 20px}
+.problem-building{background:linear-gradient(0deg,rgba(201,168,76,0.15),rgba(201,168,76,0.05));width:8px;border-radius:2px 2px 0 0}
+.problem-caption{position:absolute;bottom:12px;left:0;right:0;text-align:center;z-index:2;font-size:10px;color:var(--gold2);letter-spacing:0.1em;text-transform:uppercase}
+
+/* ═══ INTRO AI ═══════════════════════════════════════ */
+#intro-ai{padding:60px 80px;background:var(--white)}
+.section-label{font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;font-weight:500}
+.section-h2{font-family:'Playfair Display',serif;font-size:clamp(24px,3vw,34px);color:var(--white);font-weight:500;line-height:1.2;margin-bottom:14px}
+.section-h2.dark{color:#0A1628}
+.intro-ai-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.intro-ai-copy p{font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:12px;font-weight:300}
+.intro-ai-copy p.dark{color:#5A6A80}
+.intro-ai-features{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
+.ai-feature{text-align:center;padding:20px 16px}
+.af-icon{width:36px;height:36px;background:rgba(201,168,76,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-size:16px}
+.af-title{font-size:13px;color:#0A1628;font-weight:600;margin-bottom:6px}
+.af-text{font-size:12px;color:#6A7A90;line-height:1.6;font-weight:300}
+
+/* ═══ HOW IT WORKS ══════════════════════════════════ */
+#how-it-works{padding:60px 80px;background:var(--white)}
+.hiw-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:36px;position:relative}
+.hiw-grid::before{content:'';position:absolute;top:28px;left:12%;right:12%;height:1px;background:linear-gradient(90deg,transparent,var(--gold),var(--gold),transparent)}
+.hiw-step{text-align:center;padding:0 16px;position:relative}
+.hiw-num{width:56px;height:56px;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-family:'Playfair Display',serif;font-size:18px;color:var(--gold);background:var(--white);position:relative;z-index:1}
+.hiw-title{font-size:13px;color:#0A1628;font-weight:600;margin-bottom:6px}
+.hiw-text{font-size:12px;color:#6A7A90;line-height:1.6;font-weight:300}
+.hiw-cta{text-align:center;margin-top:40px}
+.hiw-arrow{position:absolute;right:-12px;top:24px;color:var(--gold);font-size:16px;z-index:2}
+
+/* ═══ WHAT AI EVALUATES ══════════════════════════════ */
+#evaluates{padding:60px 80px;background:var(--navy)}
+.eval-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:36px}
+.eval-card{padding:20px 16px;background:var(--card-bg);border:1px solid var(--border);border-radius:var(--r);transition:all .2s;text-align:center}
+.eval-card:hover{border-color:var(--gold);background:var(--gold4)}
+.ec-icon{font-size:20px;margin-bottom:10px}
+.ec-title{font-size:12px;color:var(--white);font-weight:600;margin-bottom:6px}
+.ec-text{font-size:11px;color:var(--muted);line-height:1.6;font-weight:300}
+
+/* ═══ PROGRAM PATHWAYS ══════════════════════════════ */
+#pathways{padding:60px 80px;background:var(--navy2)}
+.pathways-intro{max-width:500px;margin-bottom:36px}
+.pathways-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.pathway-card{border-radius:var(--r);overflow:hidden;border:1px solid var(--border);background:var(--card-bg);transition:all .2s;cursor:default}
+.pathway-card:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:0 20px 40px rgba(0,0,0,0.4)}
+.pc-img{height:120px;position:relative;overflow:hidden}
+.pc-img-caribbean{background:linear-gradient(135deg,#0D4A6B 0%,#1A7A9A 50%,#0D4A6B 100%)}
+.pc-img-europe{background:linear-gradient(135deg,#1A2040 0%,#3A5080 50%,#1A2040 100%)}
+.pc-img-uae{background:linear-gradient(135deg,#3A2A10 0%,#7A5A20 50%,#3A2A10 100%)}
+.pc-img-grenada{background:linear-gradient(135deg,#1A3A1A 0%,#2A6A2A 50%,#1A3A1A 100%)}
+.pc-img-egypt{background:linear-gradient(135deg,#3A2010 0%,#7A4A20 50%,#3A2010 100%)}
+.pc-img-tax{background:linear-gradient(135deg,#1A1A3A 0%,#2A2A6A 50%,#1A1A3A 100%)}
+.pc-img-label{position:absolute;bottom:8px;left:10px;right:10px;font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);font-weight:500}
+.pc-img-icon{position:absolute;top:50%;left:50%;transform:translate(-50%,-60%);font-size:28px;opacity:0.3}
+.pc-body{padding:14px}
+.pc-title{font-family:'Playfair Display',serif;font-size:13px;color:var(--white);margin-bottom:6px;font-weight:500}
+.pc-text{font-size:11px;color:var(--muted);line-height:1.6;font-weight:300}
+
+/* ═══ SAMPLE RESULT ══════════════════════════════════ */
+#sample-result{padding:60px 80px;background:linear-gradient(135deg,var(--navy) 0%,var(--navy3) 100%)}
+.sr-inner{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.sr-copy .section-h2{margin-bottom:14px}
+.sr-copy p{font-size:14px;color:var(--muted);line-height:1.7;font-weight:300}
+.result-card{background:var(--white);border-radius:10px;padding:28px;box-shadow:0 40px 80px rgba(0,0,0,0.4)}
+.rc-header{display:flex;align-items:center;gap:10px;margin-bottom:18px;padding-bottom:14px;border-bottom:2px solid #E8E0D0}
+.rc-logo{width:28px;height:28px;background:#0A1628;border-radius:5px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:11px;color:#C9A84C;font-weight:700}
+.rc-head-text{font-family:'Playfair Display',serif;font-size:13px;color:#0A1628;font-weight:500}
+.rc-head-sub{font-size:9px;color:#C9A84C;letter-spacing:0.12em;text-transform:uppercase}
+.suggestion-block{margin-bottom:14px;padding:14px;background:#F8F5F0;border-radius:var(--r);border-left:3px solid #C9A84C}
+.sb-rank{font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:#C9A84C;margin-bottom:4px;font-weight:600}
+.sb-title{font-size:13px;color:#0A1628;font-weight:600;margin-bottom:4px;font-family:'Playfair Display',serif}
+.sb-why{font-size:11px;color:#5A6A80;line-height:1.6}
+.rc-advisor{padding:10px 14px;background:#FFF8F0;border:1px solid #E8D5A0;border-radius:var(--r);display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.ra-label{font-size:10px;color:#5A6A80;font-weight:500}
+.ra-val{font-size:10px;color:#0A1628;font-weight:600}
+.rc-tags{display:flex;gap:6px;flex-wrap:wrap}
+.rc-tag{padding:3px 10px;background:#E8F0F8;border-radius:20px;font-size:10px;color:#3A5A80;font-weight:500}
+.rc-disclaimer{font-size:9px;color:#9AA8B8;margin-top:10px;font-style:italic;text-align:center}
+
+/* ═══ WHY CTRUST ═════════════════════════════════════ */
+#why-ctrust{padding:60px 80px;background:var(--navy2)}
+.wc-grid{display:grid;grid-template-columns:1fr 2fr;gap:60px;align-items:start}
+.wc-copy p{font-size:14px;color:var(--muted);line-height:1.7;font-weight:300}
+.wc-features{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.wc-feature{padding:20px;background:var(--card-bg);border:1px solid var(--border);border-radius:var(--r);text-align:center}
+.wf-icon{font-size:20px;margin-bottom:10px}
+.wf-title{font-size:13px;color:var(--white);font-weight:600;margin-bottom:6px}
+.wf-text{font-size:12px;color:var(--muted);line-height:1.6;font-weight:300}
+
+/* ═══ QUIZ MODAL ════════════════════════════════════ */
+#quiz-overlay{
+  display:none;position:fixed;inset:0;z-index:200;
+  background:rgba(5,12,26,0.97);backdrop-filter:blur(8px);
+  overflow-y:auto;
+}
+#quiz-panel{
+  max-width:680px;margin:40px auto;padding:60px 60px 80px;
+  background:var(--navy2);border:1px solid var(--border);border-radius:16px;
+  position:relative;
+}
+.qp-close{position:absolute;top:20px;right:20px;background:none;border:none;color:var(--muted);font-size:22px;cursor:pointer;width:36px;height:36px;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:all .2s}
+.qp-close:hover{background:var(--card-bg);color:var(--text)}
+.qp-logo{display:flex;align-items:center;gap:10px;margin-bottom:40px}
+.qp-logo-box{width:32px;height:32px;background:var(--gold);border-radius:6px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;color:var(--navy);font-weight:700}
+.qp-logo-text{font-family:'Playfair Display',serif;font-size:15px;color:var(--white)}
+.qp-logo-sub{font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);display:block}
+/* Progress */
+.q-progress-wrap{margin-bottom:44px}
+.q-progress-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.q-progress-label{font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted)}
+.q-progress-pct{font-family:'Playfair Display',serif;font-size:18px;color:var(--gold)}
+.q-progress-bar{height:3px;background:var(--card-bg);border-radius:3px;overflow:hidden}
+.q-progress-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:3px;transition:width .5s cubic-bezier(.4,0,.2,1);width:0}
+/* Steps */
+.q-step{display:none;animation:fadeUp .35s ease}
+.q-step.active{display:block}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.q-step-num{font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.q-step-q{font-family:'Playfair Display',serif;font-size:clamp(20px,3vw,28px);font-weight:400;color:var(--white);margin-bottom:28px;line-height:1.3}
+.q-options{display:flex;flex-direction:column;gap:10px}
+.q-option{display:flex;align-items:center;gap:14px;padding:16px 20px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:var(--r);cursor:pointer;transition:all .2s;position:relative;overflow:hidden}
+.q-option::before{content:'';position:absolute;inset:0;background:var(--gold3);opacity:0;transition:opacity .2s}
+.q-option:hover{border-color:var(--gold)}
+.q-option:hover::before{opacity:1}
+.q-option.selected{border-color:var(--gold);background:rgba(201,168,76,0.07)}
+.q-option.selected::before{opacity:0}
+.q-opt-letter{width:28px;height:28px;border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;color:var(--muted);flex-shrink:0;transition:all .2s;position:relative}
+.q-option.selected .q-opt-letter,.q-option:hover .q-opt-letter{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.q-opt-text{font-size:14px;font-weight:300;color:var(--text);position:relative}
+/* Nav */
+.q-nav{display:flex;justify-content:space-between;margin-top:32px}
+.q-btn-back{background:none;border:1px solid var(--border);color:var(--muted);padding:11px 24px;font-family:'Mulish',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;border-radius:var(--r);transition:all .2s}
+.q-btn-back:hover{border-color:var(--gold);color:var(--text)}
+.q-btn-next{background:var(--gold);border:none;color:var(--navy);padding:12px 30px;font-family:'Mulish',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;cursor:pointer;border-radius:var(--r);transition:all .2s;opacity:.35;pointer-events:none}
+.q-btn-next.ready{opacity:1;pointer-events:auto}
+.q-btn-next.ready:hover{background:var(--gold2)}
+/* Contact step */
+.q-contact-title{font-family:'Playfair Display',serif;font-size:26px;color:var(--white);margin-bottom:6px;font-weight:400}
+.q-contact-sub{font-size:14px;color:var(--muted);margin-bottom:28px;font-weight:300}
+.q-field{margin-bottom:16px}
+.q-field label{display:block;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+.q-field input,.q-field select{width:100%;background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:var(--r);padding:13px 16px;color:var(--text);font-family:'Mulish',sans-serif;font-size:14px;outline:none;transition:border-color .2s}
+.q-field input:focus,.q-field select:focus{border-color:var(--gold)}
+.q-field input::placeholder{color:var(--muted)}
+.q-field select{-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238A9BB5' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center}
+.q-field select option{background:var(--navy2)}
+.q-fields-2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.q-submit{width:100%;margin-top:8px;background:var(--gold);border:none;color:var(--navy);padding:15px;font-family:'Mulish',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;cursor:pointer;border-radius:var(--r);transition:all .2s}
+.q-submit:hover{background:var(--gold2)}
+.q-privacy{font-size:11px;color:var(--muted);text-align:center;margin-top:10px;font-style:italic}
+/* Loading */
+#q-loading{display:none;flex-direction:column;align-items:center;justify-content:center;min-height:300px;gap:20px}
+.q-spinner{width:44px;height:44px;border:2px solid var(--border);border-top-color:var(--gold);border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.q-loading-text{font-family:'Playfair Display',serif;font-size:18px;color:var(--muted);font-weight:300}
+/* Results */
+#q-results{display:none}
+.qr-header{text-align:center;margin-bottom:40px}
+.qr-eyebrow{font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.qr-title{font-family:'Playfair Display',serif;font-size:32px;color:var(--white);font-weight:400;line-height:1.2;margin-bottom:8px}
+.qr-sub{font-size:13px;color:var(--muted);font-weight:300}
+.qr-card{background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:var(--r);padding:28px;margin-bottom:18px;position:relative;overflow:hidden}
+.qr-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),transparent)}
+.qr-card.rank2::before{background:linear-gradient(90deg,rgba(201,168,76,.4),transparent)}
+.qr-rank{font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.qr-prog-name{font-family:'Playfair Display',serif;font-size:22px;color:var(--white);margin-bottom:6px}
+.qr-prog-sub{font-size:12px;color:var(--muted);margin-bottom:18px}
+.qr-why-label{font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.qr-reasons{list-style:none;display:flex;flex-direction:column;gap:6px;margin-bottom:20px}
+.qr-reasons li{display:flex;gap:8px;font-size:13px;color:var(--text);font-weight:300;line-height:1.5}
+.qr-reasons li::before{content:'—';color:var(--gold);flex-shrink:0;font-size:11px;margin-top:2px}
+.qr-meta{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;padding:16px;background:rgba(255,255,255,0.03);border-radius:var(--r);margin-bottom:18px}
+.qm-label{font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);margin-bottom:3px}
+.qm-val{font-size:12px;color:var(--gold2)}
+.btn-brochure{display:inline-flex;align-items:center;gap:8px;background:none;border:1px solid var(--gold);color:var(--gold);padding:10px 22px;font-family:'Mulish',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;cursor:pointer;border-radius:var(--r);transition:all .2s}
+.btn-brochure:hover{background:var(--gold);color:var(--navy)}
+.qr-disclaimer{margin-top:28px;padding:18px 20px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:var(--r);font-size:11px;color:var(--muted);line-height:1.7}
+.qr-disclaimer strong{color:var(--text)}
+.qr-manual-note{padding:16px 20px;border:1px solid rgba(201,168,76,0.3);border-radius:var(--r);background:var(--gold4);font-size:13px;color:var(--gold2);line-height:1.6;margin-top:16px}
+.btn-restart{display:block;width:100%;margin-top:24px;background:none;border:none;color:var(--muted);font-family:'Mulish',sans-serif;font-size:13px;cursor:pointer;text-decoration:underline;text-underline-offset:3px;transition:color .2s}
+.btn-restart:hover{color:var(--text)}
+
+/* ═══ LEAD CAPTURE ════════════════════════════════ */
+#lead-capture{padding:60px 80px;background:var(--navy)}
+.lc-inner{display:grid;grid-template-columns:1fr 1.5fr;gap:60px;align-items:start}
+.lc-copy p{font-size:14px;color:var(--muted);line-height:1.7;font-weight:300}
+.lc-form{background:var(--card-bg);border:1px solid var(--border);border-radius:10px;padding:32px}
+.lc-field{margin-bottom:14px}
+.lc-field label{display:block;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.lc-field input,.lc-field select,.lc-field textarea{width:100%;background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:var(--r);padding:11px 14px;color:var(--text);font-family:'Mulish',sans-serif;font-size:13px;outline:none;transition:border-color .2s}
+.lc-field input:focus,.lc-field select:focus,.lc-field textarea:focus{border-color:var(--gold)}
+.lc-field input::placeholder,.lc-field textarea::placeholder{color:var(--muted)}
+.lc-field select{-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238A9BB5' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center}
+.lc-field select option{background:var(--navy2)}
+.lc-2col{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.lc-3col{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px}
+.lc-submit{width:100%;background:var(--gold);border:none;color:var(--navy);padding:14px;font-family:'Mulish',sans-serif;font-size:12px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;cursor:pointer;border-radius:var(--r);transition:all .2s;margin-top:6px}
+.lc-submit:hover{background:var(--gold2)}
+.lc-privacy{font-size:10px;color:var(--muted);text-align:center;margin-top:8px;font-style:italic}
+
+/* ═══ DISCLAIMER ════════════════════════════════════ */
+#disclaimer-sect{padding:32px 80px;background:var(--navy3);border-top:1px solid var(--border);position:relative;overflow:hidden}
+#disclaimer-sect::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 200'%3E%3Cpath d='M50 100 Q100 50 150 80 Q200 110 250 70 Q300 30 350 60 Q400 90 450 50 Q500 10 550 40 Q600 70 650 30 Q700 0 750 30' fill='none' stroke='rgba(201,168,76,0.06)' stroke-width='1'/%3E%3Cpath d='M50 120 Q100 80 150 100 Q200 120 250 90 Q300 60 350 80 Q400 100 450 70 Q500 40 550 60 Q600 80 650 50 Q700 20 750 50' fill='none' stroke='rgba(201,168,76,0.04)' stroke-width='1'/%3E%3Cellipse cx='200' cy='100' rx='120' ry='40' fill='none' stroke='rgba(201,168,76,0.05)' stroke-width='0.5'/%3E%3Cellipse cx='500' cy='80' rx='100' ry='35' fill='none' stroke='rgba(201,168,76,0.05)' stroke-width='0.5'/%3E%3C/svg%3E") center/cover no-repeat;opacity:0.5}
+.disclaimer-inner{display:flex;gap:16px;align-items:flex-start;max-width:800px;margin:0 auto;position:relative;z-index:1}
+.d-icon{font-size:20px;flex-shrink:0;margin-top:2px}
+.d-title{font-size:12px;color:var(--white);font-weight:600;margin-bottom:4px}
+.d-text{font-size:11px;color:var(--muted);line-height:1.7;font-weight:300}
+
+/* ═══ FAQ ═══════════════════════════════════════════ */
+#faq{padding:60px 80px;background:var(--white)}
+.faq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
+.faq-item{padding:20px;background:#F8F5F0;border:1px solid #E8E0D0;border-radius:var(--r)}
+.faq-q{font-size:13px;color:#0A1628;font-weight:600;margin-bottom:8px;line-height:1.4}
+.faq-a{font-size:12px;color:#6A7A90;line-height:1.6;font-weight:300}
+
+/* ═══ FINAL CTA ═════════════════════════════════════ */
+#final-cta{
+  padding:80px 80px;
+  background:linear-gradient(135deg,var(--navy2) 0%,var(--navy3) 100%);
+  text-align:center;position:relative;overflow:hidden;
+}
+#final-cta::before{content:'';position:absolute;bottom:0;left:0;right:0;height:200px;background:linear-gradient(0deg,rgba(201,168,76,0.05),transparent)}
+#final-cta::after{content:'';position:absolute;bottom:0;left:0;right:0;height:80px;background:linear-gradient(0deg,rgba(201,168,76,0.08),transparent)}
+.fc-eyebrow{font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.fc-h2{font-family:'Playfair Display',serif;font-size:clamp(26px,3.5vw,42px);color:var(--white);font-weight:500;margin-bottom:14px;line-height:1.15}
+.fc-sub{font-size:14px;color:var(--muted);max-width:560px;margin:0 auto 32px;line-height:1.7;font-weight:300}
+.fc-btns{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:20px}
+.fc-trust{display:flex;justify-content:center;gap:24px;flex-wrap:wrap}
+.fc-trust-item{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted)}
+.fct-icon{font-size:12px}
+
+/* ═══ FOOTER ═════════════════════════════════════════ */
+footer{background:var(--navy);border-top:1px solid var(--border);padding:24px 80px;display:flex;align-items:center;justify-content:space-between}
+.footer-brand{font-family:'Playfair Display',serif;font-size:13px;color:var(--muted)}
+.footer-brand span{color:var(--gold)}
+.footer-copy{font-size:11px;color:var(--muted)}
+
+/* ═══ STICKY CTA ════════════════════════════════════ */
+.sticky-cta{
+  display:none;
+  position:fixed;bottom:0;left:0;right:0;z-index:90;
+  background:rgba(10,22,40,0.95);backdrop-filter:blur(10px);
+  border-top:1px solid var(--border);
+  padding:14px 80px;
+  align-items:center;justify-content:space-between;
+}
+.sticky-cta.visible{display:flex}
+.sc-text{font-size:13px;color:var(--muted)}
+.sc-text strong{color:var(--white)}
+
+/* ═══ UTILITY ════════════════════════════════════════ */
+.section-intro{max-width:580px;margin-bottom:44px}
+.section-intro p{font-size:15px;color:var(--muted);line-height:1.7;font-weight:300}
+.gold-line{width:48px;height:2px;background:var(--gold);margin:16px 0}
+@media(max-width:900px){
+  nav{padding:0 20px}
+  .nav-links{display:none}
+  #hero{flex-direction:column;padding:100px 24px 60px}
+  .hero-right{display:none}
+  .trust-cards{grid-template-columns:1fr 1fr}
+  #problem{grid-template-columns:1fr;padding:60px 24px}
+  .problem-right{display:none}
+  .intro-ai-grid,.sr-inner,.wc-grid,.lc-inner{grid-template-columns:1fr}
+  .hiw-grid{grid-template-columns:1fr 1fr}
+  .hiw-grid::before{display:none}
+  .eval-grid{grid-template-columns:1fr 1fr}
+  .pathways-grid{grid-template-columns:1fr}
+  .faq-grid{grid-template-columns:1fr}
+  .wc-features{grid-template-columns:1fr}
+  section[id]{padding:60px 24px}
+  #final-cta{padding:60px 24px}
+  footer{padding:20px 24px;flex-direction:column;gap:8px;text-align:center}
+  #quiz-panel{margin:20px;padding:36px 24px 60px}
+  .sticky-cta{padding:14px 20px}
+  .fc-trust{gap:16px}
+  .lc-2col{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- ── NAV ──────────────────────────────────────────────── -->
+<nav>
+  <div class="nav-logo">
+    <div class="nav-logo-icon">
+      <svg viewBox="0 0 16 16"><path d="M8 1L14 5V11L8 15L2 11V5L8 1Z"/></svg>
+    </div>
+    <div>
+      <div class="nav-logo-text">CTrustGlobal</div>
+      <span class="nav-logo-sub">Building Wealth Through Freedom</span>
+    </div>
+  </div>
+  <div class="nav-links">
+    <a href="#" class="has-arrow">Citizenship</a>
+    <a href="#" class="has-arrow">Residency</a>
+    <a href="#">About Us</a>
+    <a href="#" class="has-arrow">Resources</a>
+  </div>
+  <a href="#" class="nav-cta" onclick="openQuiz();return false">Book a Consultation</a>
+</nav>
+
+<!-- ── HERO ─────────────────────────────────────────────── -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-left">
+    <p class="hero-eyebrow">AI-POWERED INVESTMENT MIGRATION ADVISOR</p>
+    <h1 class="hero-h1">Find the Citizenship or Residency Route Designed Around Your <em>Freedom Goals</em></h1>
+    <p class="hero-sub">Answer a few strategic questions and receive preliminary AI-powered suggestions across Citizenship by Investment, Residency by Investment, Golden Visa, and global mobility pathways — guided by CTrustGlobal's advisory expertise.</p>
+    <div class="hero-btns">
+      <button class="btn-primary" onclick="openQuiz()">Start My Private Assessment</button>
+      <button class="btn-outline">Speak With an Advisor</button>
+    </div>
+    <div class="hero-badges">
+      <div class="hero-badge"><div class="badge-icon">🏛</div>Government-authorized advisory expertise</div>
+      <div class="hero-badge"><div class="badge-icon">🌍</div>Citizenship, residency &amp; Golden Visa pathways</div>
+      <div class="hero-badge"><div class="badge-icon">👨‍👩‍👧</div>Family, business &amp; wealth-planning focused</div>
+      <div class="hero-badge"><div class="badge-icon">🔒</div>Secure preliminary eligibility review</div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="laptop-mockup">
+      <div class="laptop-notch"></div>
+      <div class="laptop-screen">
+        <div class="advisor-widget">
+          <div class="aw-header">
+            <div class="aw-logo">C</div>
+            <div>
+              <div class="aw-title">CTrustGlobal AI Advisor</div>
+              <div class="aw-sub">Your Freedom Journey Starts Here</div>
+            </div>
+          </div>
+          <div class="aw-progress"><div class="aw-progress-fill"></div></div>
+          <p class="aw-prog-text" style="font-size:9px;color:var(--muted);text-align:right;margin-bottom:12px">Question 1 of 10 — 10%</p>
+          <p class="aw-q">What is your primary goal?</p>
+          <div class="aw-options">
+            <div class="aw-opt sel"><div class="aw-opt-icon">🌍</div>Global Mobility</div>
+            <div class="aw-opt"><div class="aw-opt-icon">👨‍👩‍👧</div>Family Security</div>
+            <div class="aw-opt"><div class="aw-opt-icon">💼</div>Business Expansion</div>
+            <div class="aw-opt"><div class="aw-opt-icon">🛡</div>Strategic Plan B</div>
+          </div>
+          <button class="btn-primary" style="width:100%;font-size:10px;padding:10px" onclick="openQuiz()">Start My Assessment →</button>
+        </div>
+      </div>
+      <div class="laptop-base"></div>
+    </div>
+    <div class="hero-passport"></div>
+    <div class="hero-compass"></div>
+  </div>
+</section>
+
+<!-- ── TRUST BAR ──────────────────────────────────────── -->
+<section id="trust-bar">
+  <p class="trust-bar-headline">Trusted guidance for investors, entrepreneurs, and families seeking greater global freedom.</p>
+  <p class="trust-bar-sub">CTrustGlobal supports clients across Citizenship by Investment, Residency by Investment, and second passport programs, with a focus on family protection, mobility, and long-term planning.</p>
+  <div class="trust-cards">
+    <div class="trust-card">
+      <div class="tc-icon">🌐</div>
+      <p class="tc-title">Global Mobility</p>
+      <p class="tc-text">Explore routes designed to improve visa-free access and reduce travel friction.</p>
+    </div>
+    <div class="trust-card">
+      <div class="tc-icon">👨‍👩‍👧‍👦</div>
+      <p class="tc-title">Family Security</p>
+      <p class="tc-text">Identify programs that may include spouses, children, parents, and eligible dependents.</p>
+    </div>
+    <div class="trust-card">
+      <div class="tc-icon">💼</div>
+      <p class="tc-title">Business Expansion</p>
+      <p class="tc-text">Assess pathways connected to regional presence, international banking, and market access.</p>
+    </div>
+    <div class="trust-card">
+      <div class="tc-icon">🛡️</div>
+      <p class="tc-title">Strategic Plan B</p>
+      <p class="tc-text">Compare options for long-term security, residency flexibility, and jurisdictional diversification.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROBLEM ────────────────────────────────────────── -->
+<section id="problem">
+  <div class="problem-left">
+    <h2>Your Second Citizenship or Residency Should Not Be Chosen by Guesswork</h2>
+    <p>Every investor's situation is different. Some need a stronger passport. Some need Schengen access. Some are planning family relocation. Others are looking for a tax-efficient base, a business gateway, or a secure Plan B.</p>
+    <p>The wrong program can cost time, capital, and opportunity. The right route begins with understanding your objective, nationality, budget, timeline, family structure, and mobility needs.</p>
+    <div class="problem-cta-strip">
+      <p>Let the AI Advisor narrow the options before you speak with a specialist.</p>
+      <button class="btn-primary" onclick="openQuiz()">Find My Suitable Route</button>
+    </div>
+  </div>
+  <div class="problem-right">
+    <div class="problem-img-frame">
+      <div class="problem-city">
+        <div class="problem-cityline">
+          <div class="problem-building" style="height:30px"></div>
+          <div class="problem-building" style="height:45px"></div>
+          <div class="problem-building" style="height:25px"></div>
+          <div class="problem-building" style="height:55px"></div>
+          <div class="problem-building" style="height:35px"></div>
+          <div class="problem-building" style="height:50px"></div>
+          <div class="problem-building" style="height:20px"></div>
+          <div class="problem-building" style="height:40px"></div>
+          <div class="problem-building" style="height:60px"></div>
+          <div class="problem-building" style="height:30px"></div>
+          <div class="problem-building" style="height:48px"></div>
+          <div class="problem-building" style="height:22px"></div>
+          <div class="problem-building" style="height:52px"></div>
+          <div class="problem-building" style="height:38px"></div>
+          <div class="problem-building" style="height:44px"></div>
+          <div class="problem-building" style="height:28px"></div>
+          <div class="problem-building" style="height:56px"></div>
+          <div class="problem-building" style="height:32px"></div>
+          <div class="problem-building" style="height:42px"></div>
+          <div class="problem-building" style="height:26px"></div>
+        </div>
+      </div>
+      <div class="problem-silhouette"></div>
+      <p class="problem-caption">Your second home awaits</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── INTRO AI ────────────────────────────────────────── -->
+<section id="intro-ai">
+  <div class="intro-ai-grid">
+    <div class="intro-ai-copy">
+      <p class="section-label" style="color:#C9A84C">Introducing the AI Advisor</p>
+      <h2 class="section-h2 dark">A Smarter First Step Before Your Consultation</h2>
+      <div class="gold-line"></div>
+      <p class="dark">The CTrustGlobal AI Advisor is designed to help you identify which investment migration direction may fit your profile before entering a full advisory consultation.</p>
+      <p class="dark">It does not replace professional advice. It gives you a structured starting point — so the conversation with our advisory team becomes sharper, faster, and more relevant.</p>
+    </div>
+    <div class="intro-ai-features">
+      <div class="ai-feature">
+        <div class="af-icon">🎯</div>
+        <p class="af-title">Personalized Question Path</p>
+        <p class="af-text">The AI adjusts questions based on your answers, including family size, preferred region, residency versus citizenship goals, timeline, and physical presence requirements.</p>
+      </div>
+      <div class="ai-feature">
+        <div class="af-icon">⚖️</div>
+        <p class="af-title">CBI + RBI Matching</p>
+        <p class="af-text">The logic does not force every client toward citizenship only. It can also identify when a Golden Visa or Residency by Investment pathway may be more suitable.</p>
+      </div>
+      <div class="ai-feature">
+        <div class="af-icon">👤</div>
+        <p class="af-title">Advisor-Reviewed Direction</p>
+        <p class="af-text">The output is positioned as a preliminary suggestion, with final eligibility, costs, documentation, dependents, tax considerations, and due diligence reviewed by a CTrustGlobal advisor.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── HOW IT WORKS ───────────────────────────────────── -->
+<section id="how-it-works">
+  <div class="section-intro" style="text-align:center;max-width:700px;margin:0 auto 44px">
+    <p class="section-label" style="color:#C9A84C">How It Works</p>
+    <h2 class="section-h2 dark">From Questions to a Personalized Freedom Plan</h2>
+    <div class="gold-line" style="margin:16px auto"></div>
+  </div>
+  <div class="hiw-grid">
+    <div class="hiw-step">
+      <div class="hiw-num">1</div>
+      <p class="hiw-title">Define Your Goal</p>
+      <p class="hiw-text">Tell us whether your priority is travel freedom, family security, tax and asset planning, relocation, or business expansion.</p>
+      <span class="hiw-arrow">→</span>
+    </div>
+    <div class="hiw-step">
+      <div class="hiw-num">2</div>
+      <p class="hiw-title">Let the AI Narrow Options</p>
+      <p class="hiw-text">The Advisor evaluates your answers across citizenship, residency, Golden Visa, and strategic investment migration pathways.</p>
+      <span class="hiw-arrow">→</span>
+    </div>
+    <div class="hiw-step">
+      <div class="hiw-num">3</div>
+      <p class="hiw-title">Receive Your Preliminary Suggestions</p>
+      <p class="hiw-text">You will see 1–2 possible directions, clearly labeled as preliminary AI suggestions.</p>
+      <span class="hiw-arrow">→</span>
+    </div>
+    <div class="hiw-step">
+      <div class="hiw-num">4</div>
+      <p class="hiw-title">Speak With CTrustGlobal</p>
+      <p class="hiw-text">A specialist can then review your profile, confirm eligibility, compare programs, and guide you toward the most suitable route.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── EVALUATES ──────────────────────────────────────── -->
+<section id="evaluates">
+  <div class="section-intro" style="text-align:center;max-width:600px;margin:0 auto 36px">
+    <p class="section-label">What the Advisor Evaluates</p>
+    <h2 class="section-h2">Built Around the Questions That Actually Matter</h2>
+    <div class="gold-line" style="margin:16px auto"></div>
+    <p style="font-size:14px;color:var(--muted);line-height:1.7;font-weight:300">The AI Advisor is structured to understand the strategic reason behind your search — not just your budget.</p>
+  </div>
+  <div class="eval-grid">
+    <div class="eval-card"><div class="ec-icon">🎯</div><p class="ec-title">Desired Outcome</p><p class="ec-text">Citizenship, residency, Golden Visa, or a blended long-term strategy.</p></div>
+    <div class="eval-card"><div class="ec-icon">🗺️</div><p class="ec-title">Preferred Region</p><p class="ec-text">Caribbean, Europe, North America access, or Middle East/GCC hubs.</p></div>
+    <div class="eval-card"><div class="ec-icon">⏱️</div><p class="ec-title">Timeline</p><p class="ec-text">Urgent, standard, or long-term planning horizon.</p></div>
+    <div class="eval-card"><div class="ec-icon">👨‍👩‍👧</div><p class="ec-title">Family Structure</p><p class="ec-text">Single applicant, spouse, children, parents, siblings, or complex dependents.</p></div>
+    <div class="eval-card"><div class="ec-icon">💰</div><p class="ec-title">Wealth Planning</p><p class="ec-text">Tax, asset protection, jurisdictional diversification, and advisor review needs.</p></div>
+  </div>
+</section>
+
+<!-- ── PROGRAM PATHWAYS ───────────────────────────────── -->
+<section id="pathways">
+  <div class="pathways-intro">
+    <p class="section-label">Program Pathways Covered</p>
+    <h2 class="section-h2">Explore Multiple Routes.<br>Not Just One Program.</h2>
+    <div class="gold-line"></div>
+    <p style="font-size:13px;color:var(--muted);line-height:1.7;font-weight:300">The Advisor is designed to classify prospects into strategic program buckets across citizenship, residency, and global mobility pathways.</p>
+  </div>
+  <div class="pathways-grid">
+    <div class="pathway-card">
+      <div class="pc-img pc-img-caribbean"><div class="pc-img-icon">🌴</div><p class="pc-img-label">Caribbean CBI</p></div>
+      <div class="pc-body"><p class="pc-title">Caribbean Citizenship by Investment</p><p class="pc-text">Direct second citizenship, stronger mobility, family protection, and limited or no residence requirements.</p></div>
+    </div>
+    <div class="pathway-card">
+      <div class="pc-img pc-img-europe"><div class="pc-img-icon">🏛️</div><p class="pc-img-label">European RBI</p></div>
+      <div class="pc-body"><p class="pc-title">European Residency by Investment</p><p class="pc-text">Schengen access, European lifestyle, family residency, or a potential future citizenship pathway.</p></div>
+    </div>
+    <div class="pathway-card">
+      <div class="pc-img pc-img-uae"><div class="pc-img-icon">🏙️</div><p class="pc-img-label">UAE Golden Visa</p></div>
+      <div class="pc-body"><p class="pc-title">UAE Golden Visa</p><p class="pc-text">For investors, entrepreneurs, and families seeking a stable GCC base with regional flexibility and 0% personal income tax.</p></div>
+    </div>
+    <div class="pathway-card">
+      <div class="pc-img pc-img-grenada"><div class="pc-img-icon">🗽</div><p class="pc-img-label">Grenada + US E-2</p></div>
+      <div class="pc-body"><p class="pc-title">Grenada + Potential US E-2 Strategy</p><p class="pc-text">For business owners exploring North America access through a structured investment migration strategy via Grenada's E-2 treaty.</p></div>
+    </div>
+    <div class="pathway-card">
+      <div class="pc-img pc-img-egypt"><div class="pc-img-icon">🏺</div><p class="pc-img-label">Egypt CBI</p></div>
+      <div class="pc-body"><p class="pc-title">Egypt Citizenship by Investment</p><p class="pc-text">Middle East citizenship route through donation, real estate, business investment, or deposit-based pathways.</p></div>
+    </div>
+    <div class="pathway-card">
+      <div class="pc-img pc-img-tax"><div class="pc-img-icon">⚖️</div><p class="pc-img-label">Wealth Structuring</p></div>
+      <div class="pc-body"><p class="pc-title">Tax &amp; Wealth Structuring Review</p><p class="pc-text">For investors where residency, citizenship, asset protection, and tax considerations require specialist advisor review.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SAMPLE RESULT ──────────────────────────────────── -->
+<section id="sample-result">
+  <div class="sr-inner">
+    <div class="sr-copy">
+      <p class="section-label">Sample Result Preview</p>
+      <h2 class="section-h2">What Your Preliminary Result May Look Like</h2>
+      <div class="gold-line"></div>
+      <p style="font-size:14px;color:var(--muted);line-height:1.7;font-weight:300">After completing the assessment, you will receive 1–2 clearly labeled preliminary suggestions with reasoning, program metadata, and next steps — all ready for advisor review.</p>
+      <button class="btn-primary" style="margin-top:24px" onclick="openQuiz()">See My Results →</button>
+    </div>
+    <div>
+      <div class="result-card">
+        <div class="rc-header">
+          <div class="rc-logo">C</div>
+          <div>
+            <div class="rc-head-text">Your Preliminary AI Suggestions</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:16px;margin-bottom:16px">
+          <div style="flex:1">
+            <div class="suggestion-block" style="margin-bottom:0">
+              <p class="sb-rank">Suggestion 1</p>
+              <p class="sb-title">European Residency by Investment</p>
+              <p class="sb-why">You selected Europe as your preferred region, indicated interest in mobility and long-term planning, and prefer a route with limited physical presence.</p>
+            </div>
+          </div>
+          <div style="flex:1">
+            <div class="suggestion-block" style="margin-bottom:0">
+              <p class="sb-rank">Suggestion 2</p>
+              <p class="sb-title">Caribbean Citizenship by Investment</p>
+              <p class="sb-why">You indicated that global mobility, family protection, and a faster second citizenship option may also be relevant to your objectives.</p>
+            </div>
+          </div>
+        </div>
+        <div class="rc-advisor">
+          <div><p class="ra-label">Advisor Review Required</p><p class="ra-val" style="color:#0A8A4A;font-size:11px">● Yes</p></div>
+        </div>
+        <div class="rc-tags">
+          <span class="rc-tag">Program Type: Residency / Citizenship</span>
+          <span class="rc-tag">Region: Europe / Caribbean</span>
+          <span class="rc-tag">Expected Profile: Family-Focused / Fast-Track</span>
+        </div>
+        <p class="rc-disclaimer">These are preliminary AI suggestions only.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY CTRUST ─────────────────────────────────────── -->
+<section id="why-ctrust">
+  <div class="wc-grid">
+    <div class="wc-copy">
+      <p class="section-label">Why CTrustGlobal</p>
+      <h2 class="section-h2">Global Mobility Requires More Than a Form.<br>It Requires Judgment.</h2>
+      <div class="gold-line"></div>
+      <p>CTrustGlobal combines investment migration knowledge, government-authorized program experience, and personalized advisory support to help clients move from uncertainty to a structured plan.</p>
+    </div>
+    <div class="wc-features">
+      <div class="wc-feature"><div class="wf-icon">🏛</div><p class="wf-title">Government-Authorized Experience</p><p class="wf-text">CTrustGlobal is a government-authorized citizenship advisory firm with recognized expertise in leading Caribbean Citizenship by Investment programs.</p></div>
+      <div class="wc-feature"><div class="wf-icon">🤝</div><p class="wf-title">Concierge Guidance</p><p class="wf-text">End-to-end support from discovery consultation to eligibility pre-screen, dossier preparation, approval, and fulfilment.</p></div>
+      <div class="wc-feature"><div class="wf-icon">🔒</div><p class="wf-title">Discreet, Personalized Advisory</p><p class="wf-text">Each client's route is evaluated based on nationality, family structure, source of funds, budget, timeline, and long-term objectives.</p></div>
+      <div class="wc-feature"><div class="wf-icon">📋</div><p class="wf-title">Transparent Next Steps</p><p class="wf-text">The AI Advisor prepares the first layer of analysis before the client enters a deeper consultation, making every meeting focused and efficient.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── LEAD CAPTURE ────────────────────────────────────── -->
+<section id="lead-capture">
+  <div class="lc-inner">
+    <div class="lc-copy">
+      <p class="section-label">Lead Capture / Personalized Freedom Plan</p>
+      <h2 class="section-h2">Receive Your Personalized Freedom Plan</h2>
+      <div class="gold-line"></div>
+      <p>After your preliminary AI suggestions are generated, our advisory team can prepare a more complete review of your profile, including suitable program directions, eligibility considerations, investment route comparison, family inclusion review, and next steps.</p>
+    </div>
+    <form id="lead-capture-form" action="https://formsubmit.co/coo@ctrustglobal.com" method="POST" class="lc-form">
+      <input type="hidden" name="_subject" value="New CTrustGlobal Lead Capture Submission"/>
+      <input type="hidden" name="_next" value="https://ctrustglobal.com"/>
+      <input type="hidden" name="_template" value="table"/>
+      <input type="text" name="_honey" style="display:none"/>
+      <div class="lc-3col">
+        <div class="lc-field"><label>Full Name</label><input type="text" id="lc-name" name="Full Name" placeholder="Your full name"/></div>
+        <div class="lc-field"><label>Email Address</label><input type="email" id="lc-email" name="Email" placeholder="your@email.com"/></div>
+        <div class="lc-field"><label>Phone Number</label><input type="tel" id="lc-phone" name="Phone" placeholder="+1 000 000 0000"/></div>
+        <div class="lc-field"><label>Current Nationality</label>
+          <select id="lc-nationality" name="Nationality">
+            <option value="">Select your nationality</option>
+            <option>Afghan</option><option>Albanian</option><option>Algerian</option><option>Andorran</option><option>Angolan</option><option>Antiguan</option><option>Argentine</option><option>Armenian</option><option>Australian</option><option>Austrian</option><option>Azerbaijani</option><option>Bahamian</option><option>Bahraini</option><option>Bangladeshi</option><option>Barbadian</option><option>Belarusian</option><option>Belgian</option><option>Belizean</option><option>Beninese</option><option>Bhutanese</option><option>Bolivian</option><option>Bosnian</option><option>Botswanan</option><option>Brazilian</option><option>Bruneian</option><option>Bulgarian</option><option>Burkinabé</option><option>Burundian</option><option>Cambodian</option><option>Cameroonian</option><option>Canadian</option><option>Cape Verdean</option><option>Central African</option><option>Chadian</option><option>Chilean</option><option>Chinese</option><option>Colombian</option><option>Comoran</option><option>Congolese</option><option>Costa Rican</option><option>Croatian</option><option>Cuban</option><option>Cypriot</option><option>Czech</option><option>Danish</option><option>Djiboutian</option><option>Dominican</option><option>Dutch</option><option>Ecuadorian</option><option>Egyptian</option><option>Emirati</option><option>Equatorial Guinean</option><option>Eritrean</option><option>Estonian</option><option>Swazi</option><option>Ethiopian</option><option>Fijian</option><option>Filipino</option><option>Finnish</option><option>French</option><option>Gabonese</option><option>Gambian</option><option>Georgian</option><option>German</option><option>Ghanaian</option><option>Greek</option><option>Grenadian</option><option>Guatemalan</option><option>Guinean</option><option>Guyanese</option><option>Haitian</option><option>Honduran</option><option>Hungarian</option><option>Icelandic</option><option>Indian</option><option>Indonesian</option><option>Iranian</option><option>Iraqi</option><option>Irish</option><option>Israeli</option><option>Italian</option><option>Ivorian</option><option>Jamaican</option><option>Japanese</option><option>Jordanian</option><option>Kazakh</option><option>Kenyan</option><option>Kiribati</option><option>Kuwaiti</option><option>Kyrgyz</option><option>Laotian</option><option>Latvian</option><option>Lebanese</option><option>Lesotho</option><option>Liberian</option><option>Libyan</option><option>Liechtensteiner</option><option>Lithuanian</option><option>Luxembourger</option><option>Malagasy</option><option>Malawian</option><option>Malaysian</option><option>Maldivian</option><option>Malian</option><option>Maltese</option><option>Marshallese</option><option>Mauritanian</option><option>Mauritian</option><option>Mexican</option><option>Micronesian</option><option>Moldovan</option><option>Monacan</option><option>Mongolian</option><option>Montenegrin</option><option>Moroccan</option><option>Mosotho</option><option>Mozambican</option><option>Myanmar</option><option>Namibian</option><option>Nauruan</option><option>Nepali</option><option>New Zealander</option><option>Nicaraguan</option><option>Nigerian</option><option>Nigerien</option><option>Niuean</option><option>North Korean</option><option>North Macedonian</option><option>Norwegian</option><option>Omani</option><option>Pakistani</option><option>Palauan</option><option>Palestinian</option><option>Panamanian</option><option>Papua New Guinean</option><option>Paraguayan</option><option>Peruvian</option><option>Polish</option><option>Portuguese</option><option>Qatari</option><option>Romanian</option><option>Russian</option><option>Rwandan</option><option>Salvadorean</option><option>Samoan</option><option>San Marinese</option><option>Sao Tomean</option><option>Saudi</option><option>Senegalese</option><option>Serbian</option><option>Seychellois</option><option>Sierra Leonean</option><option>Singaporean</option><option>Slovak</option><option>Slovenian</option><option>Solomon Islander</option><option>Somali</option><option>South African</option><option>South Korean</option><option>South Sudanese</option><option>Spanish</option><option>Sri Lankan</option><option>Sudanese</option><option>Surinamer</option><option>Swedish</option><option>Swiss</option><option>Syrian</option><option>Taiwanese</option><option>Tajik</option><option>Tanzanian</option><option>Thai</option><option>Togolese</option><option>Tongan</option><option>Trinidadian or Tobagonian</option><option>Tunisian</option><option>Turkish</option><option>Tuvaluan</option><option>Ugandan</option><option>Ukrainian</option><option>Uruguayan</option><option>Uzbek</option><option>Vanuatuan</option><option>Venezuelan</option><option>Vietnamese</option><option>Yemeni</option><option>Zambian</option><option>Zimbabwean</option>
+          </select>
+        </div>
+      </div>
+      <div class="lc-2col">
+        <div class="lc-field"><label>Preferred Contact Method</label>
+          <select name="Contact Method"><option>Email</option><option>Phone</option><option>WhatsApp</option></select>
+        </div>
+        <div class="lc-field"><label>What is your main objective? (Optional)</label><input type="text" name="Main Objective" placeholder="e.g. Travel freedom, family security, business expansion…"/></div>
+      </div>
+      <button type="button" class="lc-submit" onclick="submitLeadCapture()">Send Me My Personalized Freedom Plan</button>
+      <p class="lc-privacy">🔒 Your information is treated confidentially and used only to support your investment migration inquiry.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ── DISCLAIMER ─────────────────────────────────────── -->
+<section id="disclaimer-sect">
+  <div class="disclaimer-inner">
+    <div class="d-icon">🛡️</div>
+    <div>
+      <p class="d-title">Important Advisory Note</p>
+      <p class="d-text">The AI Advisor provides preliminary suggestions only. It does not provide legal, immigration, tax, or investment advice. Final suitability depends on your nationality, source of funds, background checks, family composition, documentation, government requirements, and professional advisor review. — This match is based on current 2026 program availability.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ────────────────────────────────────────────── -->
+<section id="faq">
+  <div class="section-intro" style="text-align:center;max-width:600px;margin:0 auto 36px">
+    <p class="section-label" style="color:#C9A84C">Frequently Asked Questions</p>
+    <h2 class="section-h2 dark">Common Questions</h2>
+    <div class="gold-line" style="margin:16px auto"></div>
+  </div>
+  <div class="faq-grid">
+    <div class="faq-item"><p class="faq-q">Is this an official eligibility approval?</p><p class="faq-a">No. The AI Advisor provides preliminary suggestions only. Final eligibility must be confirmed by CTrustGlobal's advisory team and, where applicable, the relevant government authority.</p></div>
+    <div class="faq-item"><p class="faq-q">Will the AI tell me the exact best country?</p><p class="faq-a">It will narrow your possible directions based on your answers. Some profiles may receive one clear direction, while others may require manual advisor review.</p></div>
+    <div class="faq-item"><p class="faq-q">Can it compare citizenship and residency options?</p><p class="faq-a">Yes. The Advisor is designed to assess both Citizenship by Investment and Residency by Investment pathways, including Golden Visa-style programs.</p></div>
+    <div class="faq-item"><p class="faq-q">Can my family be included?</p><p class="faq-a">Many programs allow family inclusion, but rules differ by country, dependent age, relationship, and financial dependency. Complex family cases should always be reviewed manually.</p></div>
+    <div class="faq-item"><p class="faq-q">How long does the assessment take?</p><p class="faq-a">The questionnaire is designed to take approximately 3–5 minutes, depending on whether conditional questions appear based on your answers.</p></div>
+    <div class="faq-item"><p class="faq-q">What happens after I complete it?</p><p class="faq-a">You receive preliminary AI suggestions and can request a Personalized Freedom Plan from CTrustGlobal's advisory team with no obligation.</p></div>
+  </div>
+</section>
+
+<!-- ── FINAL CTA ──────────────────────────────────────── -->
+<section id="final-cta">
+  <p class="fc-eyebrow">Begin Today</p>
+  <h2 class="fc-h2">Your Global Freedom Strategy<br>Starts With One Assessment</h2>
+  <p class="fc-sub">Whether your goal is a second passport, a European residency route, a GCC base, family protection, or business expansion, the CTrustGlobal AI Advisor helps you begin with clarity.</p>
+  <div class="fc-btns">
+    <button class="btn-primary" onclick="openQuiz()">Start My Private Assessment</button>
+    <button class="btn-outline">Book a Consultation</button>
+  </div>
+  <div class="fc-trust">
+    <div class="fc-trust-item"><span class="fct-icon">🔒</span>Private &amp; Confidential</div>
+    <div class="fc-trust-item"><span class="fct-icon">👤</span>Advisor Reviewed</div>
+    <div class="fc-trust-item"><span class="fct-icon">✅</span>No Obligation</div>
+    <div class="fc-trust-item"><span class="fct-icon">🔐</span>Secure &amp; Trusted</div>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────────── -->
+<footer>
+  <div class="footer-brand"><span>CTrustGlobal</span> — Building Wealth Through Freedom</div>
+  <div class="footer-copy">© 2026 CTrustGlobal. All rights reserved. | Preliminary AI suggestions only.</div>
+</footer>
+
+<!-- ── STICKY CTA ─────────────────────────────────────── -->
+<div class="sticky-cta" id="sticky-cta">
+  <p class="sc-text"><strong>Ready to find your route?</strong> The assessment takes 3–5 minutes.</p>
+  <button class="btn-primary" onclick="openQuiz()">Start My Private Assessment →</button>
+</div>
+
+<!-- ════════════════════════════════════════════════════════ -->
+<!-- ── QUIZ OVERLAY ──────────────────────────────────────── -->
+<!-- ════════════════════════════════════════════════════════ -->
+<div id="quiz-overlay">
+  <div id="quiz-panel">
+    <button class="qp-close" onclick="closeQuiz()">✕</button>
+    <div class="qp-logo">
+      <div class="qp-logo-box">C</div>
+      <div>
+        <div style="font-family:'Playfair Display',serif;font-size:15px;color:var(--white)">CTrustGlobal AI Advisor</div>
+        <span class="qp-logo-sub">Private Assessment</span>
+      </div>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="q-progress-wrap">
+      <div class="q-progress-top">
+        <span class="q-progress-label">Your Private Assessment</span>
+        <span class="q-progress-pct" id="q-pct">0%</span>
+      </div>
+      <div class="q-progress-bar"><div class="q-progress-fill" id="q-bar"></div></div>
+    </div>
+
+    <!-- Questions container -->
+    <div id="q-steps"></div>
+
+    <!-- Contact step -->
+    <div class="q-step" id="q-step-contact" style="display:none">
+      <p class="q-step-num" id="q-contact-step-num">Get Your Detailed Report</p>
+      <p class="q-contact-title" id="q-contact-title">Want the full breakdown sent to your inbox?</p>
+      <p class="q-contact-sub" id="q-contact-sub">Enter your details to receive a detailed programme brochure reviewed by our advisory team.</p>
+      <form id="quiz-lead-form" action="https://formsubmit.co/coo@ctrustglobal.com" method="POST">
+        <input type="hidden" name="_subject" value="New CTrustGlobal Quiz Lead Submission"/>
+        <input type="hidden" name="_next" value="https://ctrustglobal.com"/>
+        <input type="hidden" name="_template" value="table"/>
+        <input type="text" name="_honey" style="display:none"/>
+        <input type="hidden" id="brochure-program-hidden" name="Requested Programme" value=""/>
+        <div class="q-field"><label>Full Name</label><input type="text" id="q-name" name="Full Name" placeholder="Your full name"/></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+          <div class="q-field"><label>Email Address</label><input type="email" id="q-email" name="Email" placeholder="your@email.com"/></div>
+          <div class="q-field"><label>Phone Number</label><input type="tel" id="q-phone" name="Phone" placeholder="+1 000 000 0000"/></div>
+        </div>
+        <div class="q-field"><label>Current Nationality</label>
+          <select id="q-nationality" name="Nationality" style="width:100%;background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:var(--r);padding:12px 15px;color:var(--text);font-family:'Mulish',sans-serif;font-size:14px;outline:none">
+            <option value="">Select your nationality</option>
+            <option>Afghan</option><option>Albanian</option><option>Algerian</option><option>Andorran</option><option>Angolan</option><option>Antiguan</option><option>Argentine</option><option>Armenian</option><option>Australian</option><option>Austrian</option><option>Azerbaijani</option><option>Bahamian</option><option>Bahraini</option><option>Bangladeshi</option><option>Barbadian</option><option>Belarusian</option><option>Belgian</option><option>Belizean</option><option>Beninese</option><option>Bhutanese</option><option>Bolivian</option><option>Bosnian</option><option>Botswanan</option><option>Brazilian</option><option>Bruneian</option><option>Bulgarian</option><option>Burkinabé</option><option>Burundian</option><option>Cambodian</option><option>Cameroonian</option><option>Canadian</option><option>Cape Verdean</option><option>Central African</option><option>Chadian</option><option>Chilean</option><option>Chinese</option><option>Colombian</option><option>Comoran</option><option>Congolese</option><option>Costa Rican</option><option>Croatian</option><option>Cuban</option><option>Cypriot</option><option>Czech</option><option>Danish</option><option>Djiboutian</option><option>Dominican</option><option>Dutch</option><option>Ecuadorian</option><option>Egyptian</option><option>Emirati</option><option>Equatorial Guinean</option><option>Eritrean</option><option>Estonian</option><option>Swazi</option><option>Ethiopian</option><option>Fijian</option><option>Filipino</option><option>Finnish</option><option>French</option><option>Gabonese</option><option>Gambian</option><option>Georgian</option><option>German</option><option>Ghanaian</option><option>Greek</option><option>Grenadian</option><option>Guatemalan</option><option>Guinean</option><option>Guyanese</option><option>Haitian</option><option>Honduran</option><option>Hungarian</option><option>Icelandic</option><option>Indian</option><option>Indonesian</option><option>Iranian</option><option>Iraqi</option><option>Irish</option><option>Israeli</option><option>Italian</option><option>Ivorian</option><option>Jamaican</option><option>Japanese</option><option>Jordanian</option><option>Kazakh</option><option>Kenyan</option><option>Kiribati</option><option>Kuwaiti</option><option>Kyrgyz</option><option>Laotian</option><option>Latvian</option><option>Lebanese</option><option>Lesotho</option><option>Liberian</option><option>Libyan</option><option>Liechtensteiner</option><option>Lithuanian</option><option>Luxembourger</option><option>Malagasy</option><option>Malawian</option><option>Malaysian</option><option>Maldivian</option><option>Malian</option><option>Maltese</option><option>Marshallese</option><option>Mauritanian</option><option>Mauritian</option><option>Mexican</option><option>Micronesian</option><option>Moldovan</option><option>Monacan</option><option>Mongolian</option><option>Montenegrin</option><option>Moroccan</option><option>Mosotho</option><option>Mozambican</option><option>Myanmar</option><option>Namibian</option><option>Nauruan</option><option>Nepali</option><option>New Zealander</option><option>Nicaraguan</option><option>Nigerian</option><option>Nigerien</option><option>Niuean</option><option>North Korean</option><option>North Macedonian</option><option>Norwegian</option><option>Omani</option><option>Pakistani</option><option>Palauan</option><option>Palestinian</option><option>Panamanian</option><option>Papua New Guinean</option><option>Paraguayan</option><option>Peruvian</option><option>Polish</option><option>Portuguese</option><option>Qatari</option><option>Romanian</option><option>Russian</option><option>Rwandan</option><option>Salvadorean</option><option>Samoan</option><option>San Marinese</option><option>Sao Tomean</option><option>Saudi</option><option>Senegalese</option><option>Serbian</option><option>Seychellois</option><option>Sierra Leonean</option><option>Singaporean</option><option>Slovak</option><option>Slovenian</option><option>Solomon Islander</option><option>Somali</option><option>South African</option><option>South Korean</option><option>South Sudanese</option><option>Spanish</option><option>Sri Lankan</option><option>Sudanese</option><option>Surinamer</option><option>Swedish</option><option>Swiss</option><option>Syrian</option><option>Taiwanese</option><option>Tajik</option><option>Tanzanian</option><option>Thai</option><option>Togolese</option><option>Tongan</option><option>Trinidadian or Tobagonian</option><option>Tunisian</option><option>Turkish</option><option>Tuvaluan</option><option>Ugandan</option><option>Ukrainian</option><option>Uruguayan</option><option>Uzbek</option><option>Vanuatuan</option><option>Venezuelan</option><option>Vietnamese</option><option>Yemeni</option><option>Zambian</option><option>Zimbabwean</option>
+          </select>
+        </div>
+        <div id="quiz-answers-hidden" style="display:none"></div>
+        <button type="button" class="q-submit" onclick="submitQuizLead()">Send Me the Detailed Report →</button>
+      </form>
+      <p class="q-privacy">🔒 Private. Advisor-reviewed. No obligation.</p>
+    </div>
+
+    <!-- Loading -->
+    <div id="q-loading">
+      <div class="q-spinner"></div>
+      <div class="q-loading-text">Analysing your profile…</div>
+    </div>
+
+    <!-- Results -->
+    <div id="q-results">
+      <div class="qr-header">
+        <p class="qr-eyebrow">AI Recommendation</p>
+        <h2 class="qr-title">Your Personalised<br>Freedom Plan</h2>
+        <p class="qr-sub">Based on your answers, here are your preliminary suggestions — subject to compliance review.</p>
+      </div>
+      <div id="qr-cards"></div>
+      <div style="text-align:center;margin:24px 0">
+        <button class="btn-primary" onclick="showContactForm()" style="font-size:12px;padding:14px 32px">Get Detailed Report via Email →</button>
+      </div>
+      <div class="qr-disclaimer">
+        <strong>Important Advisory Note:</strong> This match is based on current 2026 program availability. Final eligibility, costs, dependent inclusion, documentation, and due diligence must be reviewed by a CTrustGlobal advisor. This is a preliminary AI suggestion only.
+      </div>
+      <button class="btn-restart" onclick="restartQuiz()">Start a New Assessment</button>
+    </div>
+
+    <!-- Step nav -->
+    <div class="q-nav" id="q-nav">
+      <button class="q-btn-back" id="q-btn-back" onclick="prevStep()">← Back</button>
+      <button class="q-btn-next" id="q-btn-next" onclick="nextStep()">Continue →</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ─────────────────────────────────────────────────────────────
+// QUESTIONS
+// ─────────────────────────────────────────────────────────────
+const QUESTIONS=[
+  {id:'Q1',text:'What is your #1 freedom you want to gain?',opts:[
+    {l:'A',t:'Unrestricted global travel'},
+    {l:'B',t:'Tax optimization & asset protection'},
+    {l:'C',t:'A "Plan B" safe haven for my family'},
+    {l:'D',t:'Business expansion into US/EU markets'},
+  ]},
+  {id:'Q2',text:'Which outcome are you most interested in?',opts:[
+    {l:'A',t:'A second citizenship and passport'},
+    {l:'B',t:'Residency that gives me mobility, lifestyle access, and long-term options'},
+    {l:'C',t:'I am open to either citizenship or residency, depending on what fits best'},
+    {l:'D',t:'I want residency now, with a possible path to citizenship later'},
+  ]},
+  {id:'Q3',text:'Which region appeals to you most as a second base?',opts:[
+    {l:'A',t:'Europe / Schengen'},
+    {l:'B',t:'The Caribbean Islands'},
+    {l:'C',t:'North America / access to USA'},
+    {l:'D',t:'Middle East / GCC hubs'},
+    {l:'E',t:'I am open to the best strategic option'},
+  ]},
+  {id:'Q4',text:'What is your biggest frustration with your current passport?',opts:[
+    {l:'A',t:'Frequent visa rejections or long waits'},
+    {l:'B',t:'Limited entry to the Schengen Area / UK'},
+    {l:'C',t:'High tax burden on global income'},
+    {l:'D',t:'Uncertainty about regional stability'},
+  ]},
+  {id:'Q5',text:'Does your current nationality have travel restrictions in the EU or US?',opts:[
+    {l:'A',t:'Yes, significant restrictions'},
+    {l:'B',t:'Moderate restrictions'},
+    {l:'C',t:'No major restrictions'},
+    {l:'D',t:'I am not sure'},
+  ]},
+  {id:'Q6',text:'How soon do you want your new status in hand?',opts:[
+    {l:'A',t:'As soon as possible (1–3 months)'},
+    {l:'B',t:'Comfortably (4–8 months)'},
+    {l:'C',t:'Strategic planning (9+ months)'},
+  ]},
+  {id:'Q7',text:'What is your tolerance for physical presence requirements?',opts:[
+    {l:'A',t:'I want zero or minimal physical presence'},
+    {l:'B',t:'I can visit for 1–2 weeks per year'},
+    {l:'C',t:'I plan to live there full-time'},
+  ]},
+  {id:'Q8',text:'What is your intended investment budget?',opts:[
+    {l:'A',t:'$100,000 – $240,000'},
+    {l:'B',t:'$250,000 – $500,000'},
+    {l:'C',t:'$500,000+'},
+  ]},
+  {id:'Q9',text:'How many family members would you like to include?',opts:[
+    {l:'A',t:'Just me'},
+    {l:'B',t:'Myself + spouse'},
+    {l:'C',t:'Family of 4–5'},
+    {l:'D',t:'Large family (6+)'},
+  ]},
+  {id:'Q10',text:'Do you plan to physically relocate or mainly hold the status?',opts:[
+    {l:'A',t:'I want to move my life there'},
+    {l:'B',t:'I want a status I can hold without living there'},
+    {l:'C',t:'I am open to the best advice'},
+  ]},
+  {id:'Q11',text:'What is the age range of your children?',opts:[
+    {l:'A',t:'Under 16 years old'},
+    {l:'B',t:'Between 16–25 years old'},
+    {l:'C',t:'Above 25 years old'},
+    {l:'D',t:'No children included'},
+  ],cond:()=>answers.Q9==='C'||answers.Q9==='D'},
+  {id:'Q12',text:'Will you include siblings, parents, or other dependents?',opts:[
+    {l:'A',t:'Yes, siblings'},
+    {l:'B',t:'Yes, parents under 55'},
+    {l:'C',t:'Yes, parents above 55'},
+    {l:'D',t:'Both siblings and parents'},
+    {l:'E',t:'No extended dependents'},
+  ],cond:()=>answers.Q9==='C'||answers.Q9==='D'},
+  {id:'Q13',text:'What matters most to you in Europe?',opts:[
+    {l:'A',t:'Schengen mobility with low or no stay requirement'},
+    {l:'B',t:'Fast residency approval'},
+    {l:'C',t:'A future path to citizenship'},
+    {l:'D',t:'Tax-efficient European base'},
+    {l:'E',t:'Lifestyle, education, and family relocation'},
+  ],cond:()=>['B','C','D'].includes(answers.Q2)&&answers.Q3==='A'},
+  {id:'Q14',text:'What is your main USA-related objective?',opts:[
+    {l:'A',t:'I want to explore the US E-2 investor visa pathway'},
+    {l:'B',t:'I want easier business access to the US market'},
+    {l:'C',t:'I want North America as a long-term family option'},
+    {l:'D',t:'I am not sure yet'},
+  ],cond:()=>answers.Q1==='D'||answers.Q3==='C'},
+  {id:'Q15',text:'What type of financial freedom are you mainly seeking?',opts:[
+    {l:'A',t:'Personal tax residency planning'},
+    {l:'B',t:'Asset protection and jurisdictional diversification'},
+    {l:'C',t:'Business or holding-company structuring'},
+    {l:'D',t:'Private banking and wealth mobility'},
+    {l:'E',t:'I need specialist advice'},
+  ],cond:()=>answers.Q1==='B'||answers.Q4==='C'},
+];
+
+// ─────────────────────────────────────────────────────────────
+// STATE
+// ─────────────────────────────────────────────────────────────
+let currentStep=0;
+let answers={};
+
+function getVisQs(){return QUESTIONS.filter(q=>!q.cond||q.cond());}
+
+window.addEventListener('scroll',()=>{
+  const s=document.getElementById('sticky-cta');
+  if(window.scrollY>300)s.classList.add('visible');else s.classList.remove('visible');
+});
+
+function openQuiz(){
+  document.getElementById('quiz-overlay').style.display='block';
+  document.body.style.overflow='hidden';
+  document.getElementById('q-step-contact').style.display='none';
+  document.getElementById('q-results').style.display='none';
+  buildSteps();showStep(0);
+}
+function closeQuiz(){
+  document.getElementById('quiz-overlay').style.display='none';
+  document.body.style.overflow='';
+}
+
+function buildSteps(){
+  const c=document.getElementById('q-steps');
+  c.innerHTML='';
+  QUESTIONS.forEach((q,i)=>{
+    const div=document.createElement('div');
+    div.className='q-step';
+    div.id='q-s-'+i;
+    div.innerHTML=`<p class="q-step-num"></p><p class="q-step-q">${q.text}</p><div class="q-options" id="q-opts-${i}">${q.opts.map(o=>`<div class="q-option" data-step="${i}" data-val="${o.l}" onclick="selectOpt(this)"><span class="q-opt-letter">${o.l}</span><span class="q-opt-text">${o.t}</span></div>`).join('')}</div>`;
+    c.appendChild(div);
+  });
+}
+
+function showStep(vi){
+  const vis=getVisQs();
+  const total=vis.length;
+  document.querySelectorAll('.q-step').forEach(s=>s.classList.remove('active'));
+  document.getElementById('q-step-contact').style.display='none';
+  document.getElementById('q-loading').style.display='none';
+  document.getElementById('q-results').style.display='none';
+  document.getElementById('q-nav').style.display='flex';
+  document.getElementById('q-btn-back').style.visibility=vi===0?'hidden':'visible';
+  if(vi<total){
+    const q=vis[vi];
+    const qi=QUESTIONS.indexOf(q);
+    const el=document.getElementById('q-s-'+qi);
+    el.classList.add('active');
+    el.querySelector('.q-step-num').textContent='Question '+(vi+1)+' of '+total;
+    const ready=!!answers[q.id];
+    document.getElementById('q-btn-next').classList[ready?'add':'remove']('ready');
+    if(ready){
+      document.querySelectorAll('#q-opts-'+qi+' .q-option').forEach(o=>{
+        o.classList[o.dataset.val===answers[q.id]?'add':'remove']('selected');
+      });
+    }
+  }
+  const pct=Math.round((vi/(total+1))*100);
+  document.getElementById('q-bar').style.width=pct+'%';
+  document.getElementById('q-pct').textContent=pct+'%';
+}
+
+function selectOpt(el){
+  const i=parseInt(el.dataset.step);
+  answers[QUESTIONS[i].id]=el.dataset.val;
+  document.querySelectorAll('#q-opts-'+i+' .q-option').forEach(o=>o.classList.remove('selected'));
+  el.classList.add('selected');
+  document.getElementById('q-btn-next').classList.add('ready');
+  QUESTIONS.forEach(q=>{if(q.cond&&!q.cond()&&answers[q.id])delete answers[q.id];});
+}
+
+function nextStep(){
+  const vis=getVisQs();
+  if(currentStep<vis.length&&!answers[vis[currentStep].id])return;
+  currentStep++;
+  if(currentStep>=vis.length){
+    showResultsDirect();
+    return;
+  }
+  showStep(currentStep);
+}
+function prevStep(){
+  if(currentStep===0)return;
+  currentStep--;
+  showStep(currentStep);
+}
+
+function score(){
+  const s={Caribbean_CBI:0,Grenada_E2:0,Egypt_CBI:0,UAE_GoldenVisa:0,Europe_RBI:0,Europe_Citizenship_Path:0,Tax_Structuring:0,Manual_Review:0};
+  const a=answers;
+  if(a.Q1==='A'){s.Caribbean_CBI+=3;s.Europe_RBI+=1;}
+  if(a.Q1==='B'){s.Tax_Structuring+=4;s.UAE_GoldenVisa+=2;s.Europe_RBI+=2;s.Caribbean_CBI+=1;}
+  if(a.Q1==='C'){s.Caribbean_CBI+=3;s.UAE_GoldenVisa+=2;s.Egypt_CBI+=2;s.Europe_RBI+=1;}
+  if(a.Q1==='D'){s.Grenada_E2+=4;s.Europe_RBI+=2;s.UAE_GoldenVisa+=1;}
+  if(a.Q2==='A'){s.Caribbean_CBI+=4;s.Egypt_CBI+=3;s.Grenada_E2+=2;}
+  if(a.Q2==='B'){s.Europe_RBI+=4;s.UAE_GoldenVisa+=3;}
+  if(a.Q2==='C'){s.Europe_Citizenship_Path+=4;s.Europe_RBI+=3;}
+  if(a.Q3==='A'){s.Europe_RBI+=5;s.Europe_Citizenship_Path+=2;}
+  if(a.Q3==='B'){s.Caribbean_CBI+=5;}
+  if(a.Q3==='C'){s.Grenada_E2+=5;}
+  if(a.Q3==='D'){s.UAE_GoldenVisa+=4;s.Egypt_CBI+=3;}
+  if(a.Q4==='A'){s.Caribbean_CBI+=3;}
+  if(a.Q4==='B'){s.Caribbean_CBI+=2;s.Europe_RBI+=3;}
+  if(a.Q4==='C'){s.Tax_Structuring+=4;s.UAE_GoldenVisa+=2;}
+  if(a.Q4==='D'){s.Caribbean_CBI+=2;s.UAE_GoldenVisa+=2;s.Egypt_CBI+=2;}
+  if(a.Q5==='A'){s.Caribbean_CBI+=3;s.Grenada_E2+=2;s.Manual_Review+=1;}
+  if(a.Q5==='B'){s.Caribbean_CBI+=2;s.Europe_RBI+=2;}
+  if(a.Q5==='C'){s.Europe_RBI+=1;s.Tax_Structuring+=1;}
+  if(a.Q5==='D'){s.Manual_Review+=1;}
+  if(a.Q6==='C'){s.Europe_Citizenship_Path+=2;}
+  if(a.Q7==='A'){s.Caribbean_CBI+=2;s.Europe_RBI+=2;s.UAE_GoldenVisa+=1;}
+  if(a.Q7==='B'){s.Europe_RBI+=2;s.Europe_Citizenship_Path+=1;}
+  if(a.Q7==='C'){s.UAE_GoldenVisa+=3;s.Europe_RBI+=2;}
+  if(a.Q8==='A'){s.Egypt_CBI-=5;s.UAE_GoldenVisa-=3;}
+  if(a.Q8==='B'){s.Caribbean_CBI+=3;s.Egypt_CBI+=3;s.Europe_RBI+=3;}
+  if(a.Q8==='C'){s.Tax_Structuring+=2;}
+  if(a.Q9==='C'){s.Caribbean_CBI+=2;s.Europe_RBI+=2;}
+  if(a.Q9==='D'){s.Manual_Review+=4;}
+  if(a.Q10==='A'){s.Europe_RBI+=3;s.UAE_GoldenVisa+=3;}
+  if(a.Q10==='B'){s.Caribbean_CBI+=3;s.Egypt_CBI+=2;}
+  if(a.Q11==='B'){s.Caribbean_CBI+=1;}
+  if(a.Q11==='C'){s.Manual_Review+=3;}
+  if(a.Q12==='A'){s.Manual_Review+=3;}
+  if(a.Q12==='B'){s.Manual_Review+=2;}
+  if(a.Q12==='C'){s.Manual_Review+=3;}
+  if(a.Q12==='D'){s.Manual_Review+=4;}
+  if(a.Q13==='A'){s.Europe_RBI+=3;s.Europe_Citizenship_Path+=2;}
+  if(a.Q13==='B'){s.Europe_RBI+=4;}
+  if(a.Q13==='C'){s.Europe_Citizenship_Path+=3;s.Europe_RBI+=1;}
+  if(a.Q13==='D'){s.Tax_Structuring+=3;s.Europe_RBI+=2;}
+  if(a.Q13==='E'){s.Europe_RBI+=3;}
+  if(a.Q14==='A'){s.Grenada_E2+=5;s.Egypt_CBI+=2;}
+  if(a.Q14==='B'){s.Grenada_E2+=3;s.UAE_GoldenVisa+=2;s.Europe_RBI+=1;}
+  if(a.Q14==='C'){s.Europe_RBI+=2;s.Grenada_E2+=2;}
+  if(a.Q14==='D'){s.Manual_Review+=1;}
+  if(a.Q15==='A'){s.Tax_Structuring+=4;s.UAE_GoldenVisa+=2;s.Europe_RBI+=2;}
+  if(a.Q15==='B'){s.Caribbean_CBI+=2;s.UAE_GoldenVisa+=2;s.Tax_Structuring+=3;}
+  if(a.Q15==='C'){s.UAE_GoldenVisa+=3;s.Europe_RBI+=2;s.Grenada_E2+=1;}
+  if(a.Q15==='D'){s.Tax_Structuring+=3;s.Caribbean_CBI+=1;}
+  if(a.Q15==='E'){s.Manual_Review+=2;}
+  if(a.Q6==='A'){s.Europe_Citizenship_Path-=3;s.Europe_RBI-=1;}
+  if(a.Q7==='A'){s.Europe_Citizenship_Path-=2;}
+  if(a.Q2==='A'){s.Europe_RBI-=3;s.UAE_GoldenVisa-=2;}
+  if((a.Q2==='B'||a.Q2==='C')&&a.Q5!=='A'&&a.Q4!=='A'){s.Caribbean_CBI-=2;s.Grenada_E2-=2;s.Egypt_CBI-=2;}
+  return s;
+}
+
+const PROGRAMS={
+  Caribbean_CBI:{name:'Caribbean Citizenship by Investment',sub:'Dominica · St. Kitts · Grenada · Antigua · St. Lucia',type:'Citizenship by Investment (CBI)',region:'Caribbean',style:'Donation / Real Estate',processing:'Fast (3–8 months)'},
+  Grenada_E2:{name:'Grenada Citizenship + Potential US E-2 Strategy',sub:'Strategic route for North America market access',type:'Citizenship by Investment (CBI)',region:'Caribbean / North America',style:'Donation / Real Estate',processing:'Standard (4–8 months)'},
+  UAE_GoldenVisa:{name:'UAE Golden Visa — Residency by Investment',sub:'GCC Hub — 10-Year Renewable Residency',type:'Residency by Investment (RBI)',region:'Middle East / GCC',style:'Property / Business Investment',processing:'Standard (2–6 months)'},
+  Europe_RBI:{name:'European Residency by Investment',sub:'EU / Schengen Access — Greece · Portugal · Malta · Cyprus and others',type:'Residency by Investment (RBI) / Golden Visa',region:'Europe (EU/Schengen)',style:'Real Estate / Fund Investment',processing:'Varies by programme (2–18 months)'},
+  Europe_Citizenship_Path:{name:'European Residency with Future Citizenship Pathway',sub:'EU / Schengen — Residency leading to potential citizenship',type:'Residency → Citizenship Path',region:'Europe (EU/Schengen)',style:'Real Estate / Fund Investment',processing:'Planning-based (5+ years to citizenship)'},
+  Egypt_CBI:{name:'Egypt Citizenship by Investment',sub:'Middle East Citizenship — Multiple Investment Routes',type:'Citizenship by Investment (CBI)',region:'Middle East / North Africa',style:'Donation · Real Estate · Business · Bank Deposit',processing:'Standard (3–6 months)'},
+  Tax_Structuring:{name:'Tax & Wealth Structuring Review',sub:'Advisor-led review for tax-sensitive and asset-protection strategies',type:'Advisor Review Required',region:'Multi-jurisdiction',style:'Consultant-led',processing:'Advisor-dependent'},
+};
+
+function getEuroSub(){
+  const a=answers;
+  if(a.Q13==='A')return'Greece · Hungary · Latvia · Malta · Bulgaria';
+  if(a.Q13==='B')return'Latvia · Cyprus · Hungary · Greece';
+  if(a.Q13==='C')return'Portugal · Bulgaria · Romania · Latvia';
+  if(a.Q13==='D')return'Bulgaria · Cyprus · Italy · Andorra';
+  if(a.Q13==='E')return'Greece · Cyprus · Malta · Italy';
+  return'Greece · Portugal · Malta · Cyprus and others';
+}
+
+function getEgyptRoute(){
+  const a=answers;
+  if(a.Q8==='A')return null;
+  if(a.Q6==='A')return'Donation route ($250,000) — fastest processing';
+  if(a.Q1==='D')return'Business venture route ($350,000 + $100,000 donation)';
+  if(a.Q8==='C')return'Bank deposit route ($500,000) — refundable in EGP, carries currency exposure';
+  return'Donation route ($250,000) or Real estate route ($300,000)';
+}
+
+function genReasons(key){
+  const r=[],a=answers;
+  switch(key){
+    case'Caribbean_CBI':
+      if(a.Q1==='A')r.push('Your global mobility priority aligns with Caribbean passport strength — visa-free access to 140+ countries including Schengen & UK.');
+      if(a.Q1==='C')r.push('A Caribbean second citizenship serves as a Plan B safe haven for your family.');
+      if(a.Q2==='A')r.push('Based on your priority for direct citizenship and passport, Caribbean CBI provides the most direct route.');
+      if(a.Q3==='B')r.push('Your preference for the Caribbean region aligns with available citizenship programmes.');
+      if(a.Q7==='A')r.push('Caribbean programmes require zero or minimal physical presence — ideal for remote processing.');
+      if(a.Q6==='A')r.push('Fast-processing Caribbean options can deliver passport access within 3–4 months.');
+      if(a.Q4==='A'||a.Q5==='A')r.push('Caribbean citizenship significantly reduces visa rejection risk and travel friction.');
+      if(a.Q9==='C'||a.Q9==='D')r.push('Caribbean programmes offer some of the most family-friendly inclusion policies.');
+      if(!r.length)r.push('Caribbean CBI aligns with your stated objectives and profile.');
+      break;
+    case'Grenada_E2':
+      if(a.Q1==='D')r.push('Grenada holds a US E-2 Treaty — enabling a structured US market-entry strategy post-citizenship.');
+      if(a.Q3==='C')r.push("Your North America access objective aligns with Grenada's E-2 treaty pathway.");
+      if(a.Q14==='A')r.push('Grenada citizenship may support your E-2 investor visa exploration — subject to separate US consular review.');
+      if(a.Q14==='B')r.push('Grenada provides a Caribbean passport plus a potential route to easier US business access.');
+      if(a.Q2==='A')r.push('Grenada provides direct citizenship plus a potential US business pathway.');
+      if(!r.length)r.push('Grenada CBI + potential E-2 strategy aligns with your North America objectives.');
+      r.push('Note: E-2 visa eligibility is not guaranteed and requires separate US consular review.');
+      break;
+    case'UAE_GoldenVisa':
+      if(a.Q3==='D')r.push('Aligns with your preference for a Middle East base and regional stability.');
+      if(a.Q1==='B')r.push('UAE residency enables 0% personal income tax and a globally respected address.');
+      if(a.Q10==='A')r.push('UAE Golden Visa supports full relocation with a strong business and lifestyle ecosystem.');
+      if(a.Q7==='C')r.push('UAE is suitable for full-time residency with a 10-year renewable Golden Visa.');
+      if(a.Q1==='C')r.push('UAE provides a secure Plan B with regional stability and family-friendly residency.');
+      if(!r.length)r.push('UAE Golden Visa aligns with your residency and regional objectives.');
+      r.push('No requirement to renounce current nationality.');
+      break;
+    case'Europe_RBI':
+      if(a.Q3==='A')r.push('Your European region preference aligns with Golden Visa and residency programmes providing Schengen access.');
+      if(a.Q4==='B')r.push('European residency directly addresses your limited Schengen/UK entry frustration.');
+      if(a.Q10==='A')r.push('European residency supports your relocation objective with lifestyle and education benefits.');
+      if(a.Q7==='B')r.push('Several European programmes allow minimal annual presence (1–2 weeks per year).');
+      if(a.Q13)r.push('Based on your European priorities, suitable directions include: '+getEuroSub()+'.');
+      if(!r.length)r.push('European RBI aligns with your mobility and long-term planning objectives.');
+      r.push('EU residency can lead to citizenship eligibility after required holding periods.');
+      break;
+    case'Europe_Citizenship_Path':
+      if(a.Q2==='C'||a.Q2==='D')r.push('Your openness to a residency-to-citizenship pathway aligns with European programmes offering future citizenship.');
+      if(a.Q3==='A')r.push('European programmes can provide Schengen mobility now with a structured path toward citizenship.');
+      if(a.Q6==='C')r.push('Your long-term planning horizon is compatible with European citizenship timelines.');
+      if(a.Q13==='C')r.push('Based on your future citizenship priority, suitable directions include: '+getEuroSub()+'.');
+      if(!r.length)r.push('European residency with a citizenship pathway aligns with your long-term objectives.');
+      r.push('Citizenship eligibility varies by country and requires meeting specific holding period and presence requirements.');
+      break;
+    case'Egypt_CBI':
+      if(a.Q3==='D')r.push('Egypt offers one of the few citizenship programmes in the Middle East region.');
+      if(a.Q2==='A')r.push('Egypt CBI provides direct citizenship — aligned with your citizenship priority.');
+      var er=getEgyptRoute();if(er)r.push('Based on your profile, the most relevant route appears to be: '+er+'.');
+      if(a.Q14)r.push('Egypt CBI holders may also explore the US E-2 treaty pathway.');
+      if(!r.length)r.push('Egypt CBI aligns with your Middle East citizenship objectives.');
+      r.push('Subject to consultant review for route selection and eligibility confirmation.');
+      break;
+    case'Tax_Structuring':
+      r.push('Your objectives indicate a need for specialist tax and wealth structuring advice.');
+      r.push('This may be relevant for tax and wealth structuring, but a qualified tax advisor must review your personal circumstances before any recommendation is confirmed.');
+      if(a.Q15==='A')r.push('Personal tax residency planning may involve UAE Golden Visa, European low-tax bases, or Caribbean citizenship combined with structuring.');
+      if(a.Q15==='B')r.push('Asset protection and jurisdictional diversification may benefit from Caribbean citizenship, UAE residency, or European base options.');
+      if(a.Q15==='C')r.push('Business or holding-company structuring may involve UAE, European, or multi-jurisdiction strategies.');
+      if(a.Q15==='D')r.push('Private banking and wealth mobility strategies should be reviewed with a qualified advisor.');
+      if(a.Q15==='E')r.push('A CTrustGlobal advisor should coordinate with your tax counsel before confirming any programme direction.');
+      break;
+  }
+  return r.slice(0,4);
+}
+
+function getLeadTags(){
+  const a=answers,tags=[];
+  tags.push(a.Q2==='A'?'CBI':a.Q2==='B'?'RBI':'Blended');
+  var rm={A:'Europe',B:'Caribbean',C:'USA',D:'GCC',E:'Open'};tags.push('Region: '+(rm[a.Q3]||'Open'));
+  var bm={A:'$100k–$240k',B:'$250k–$500k',C:'$500k+'};tags.push('Budget: '+(bm[a.Q8]||'TBD'));
+  tags.push('Family: '+(a.Q9==='D'?'High':a.Q9==='C'?'Medium':a.Q9==='B'?'Low':'Single'));
+  tags.push('Urgency: '+(a.Q6==='A'?'Fast':a.Q6==='B'?'Standard':'Planning'));
+  var flags=[];
+  if(a.Q1==='B'||a.Q4==='C')flags.push('Tax');
+  if(a.Q1==='D'||a.Q3==='C')flags.push('US E-2');
+  if(a.Q9==='D')flags.push('Large Family');
+  if(a.Q5==='A')flags.push('Restricted Nationality');
+  if(flags.length)tags.push('Advisor Flag: '+flags.join(' / '));
+  return tags;
+}
+
+function cardHTML(key,rank){
+  const p=PROGRAMS[key];if(!p)return'';
+  const reasons=genReasons(key);
+  var sub=p.sub;
+  if((key==='Europe_RBI'||key==='Europe_Citizenship_Path')&&answers.Q13)sub='EU / Schengen — '+getEuroSub();
+  return'<div class="qr-card '+(rank===2?'rank2':'')+'"><p class="qr-rank">Suggestion '+rank+'</p><p class="qr-prog-name">'+p.name+'</p><p class="qr-prog-sub">'+sub+'</p><p class="qr-why-label">Why this may fit your case</p><ul class="qr-reasons">'+reasons.map(function(r){return'<li>'+r+'</li>';}).join('')+'</ul><div class="qr-meta"><div><p class="qm-label">Programme Type</p><p class="qm-val">'+p.type+'</p></div><div><p class="qm-label">Region</p><p class="qm-val">'+p.region+'</p></div><div><p class="qm-label">Investment Style</p><p class="qm-val">'+p.style+'</p></div><div><p class="qm-label">Processing</p><p class="qm-val">'+p.processing+'</p></div></div><button class="btn-brochure" onclick="brochureClick(\''+key+'\')">↓ Download Personalized Brochure and Detailed Suggestion</button></div>';
+}
+
+function submitQuizLead(){
+  var name=document.getElementById('q-name').value.trim();
+  var email=document.getElementById('q-email').value.trim();
+  if(!name||!email){alert('Please enter your name and email to continue.');return;}
+
+  // Populate hidden quiz answers field
+  var s=score();
+  var keys=Object.keys(s).filter(function(k){return s[k]>0;}).sort(function(a,b){return s[b]-s[a];});
+  var answersData=keys.slice(0,3).map(function(k){return PROGRAMS[k]?PROGRAMS[k].name:k;}).join(', ');
+  var tags=getLeadTags().join('; ');
+  document.getElementById('quiz-answers-hidden').innerHTML='<input type="hidden" name="Top Recommendations" value="'+answersData.replace(/"/g,'&quot;')+'"/><input type="hidden" name="Lead Tags" value="'+tags.replace(/"/g,'&quot;')+'"/><input type="hidden" name="Source" value="Quiz Assessment"/>';
+
+  var form=document.getElementById('quiz-lead-form');
+  var formData=new FormData(form);
+
+  // Show loading state
+  document.getElementById('q-step-contact').style.display='none';
+  document.getElementById('q-loading').style.display='flex';
+
+  // Submit to Formsubmit.co
+  fetch(form.action,{
+    method:'POST',
+    body:formData,
+    headers:{'Accept':'application/json'}
+  }).then(function(r){
+    return r.json();
+  }).then(function(){
+    // Show results after successful submission
+    document.getElementById('q-loading').style.display='none';
+    document.getElementById('q-results').style.display='block';
+    document.getElementById('quiz-panel').scrollTop=0;
+  }).catch(function(){
+    // Still show results even if submission fails
+    document.getElementById('q-loading').style.display='none';
+    document.getElementById('q-results').style.display='block';
+    document.getElementById('quiz-panel').scrollTop=0;
+  });
+}
+
+function showResultsDirect(){
+  document.querySelectorAll('.q-step').forEach(s=>s.classList.remove('active'));
+  document.getElementById('q-step-contact').classList.remove('active');
+  document.getElementById('q-nav').style.display='none';
+  document.getElementById('q-loading').style.display='flex';
+  document.getElementById('q-results').style.display='none';
+  const pct=Math.round((getVisQs().length/(getVisQs().length+1))*100);
+  document.getElementById('q-bar').style.width=pct+'%';
+  document.getElementById('q-pct').textContent=pct+'%';
+  setTimeout(function(){
+    document.getElementById('q-loading').style.display='none';
+    var s=score();
+    var manual=s.Manual_Review>=4;
+    var taxFlag=s.Tax_Structuring>=4;
+    var allKeys=Object.keys(s).filter(function(k){return k!=='Manual_Review'&&k!=='Tax_Structuring';}).sort(function(a,b){return s[b]-s[a];});
+    var valid=allKeys.filter(function(k){return s[k]>0;});
+    var html='';
+    if(manual){
+      if(valid.length)html=cardHTML(valid[0],1);
+      html+='<div class="qr-manual-note">⚠️ Your case includes extended family members or adult dependents. The optimal programme depends heavily on dependent eligibility rules. <strong>A CTrustGlobal advisor review is recommended</strong> before confirming the most suitable route.</div>';
+    }else{
+      html=valid.slice(0,2).map(function(k,i){return cardHTML(k,i+1);}).join('');
+    }
+    if(taxFlag)html+='<div class="qr-manual-note">⚠️ This may be relevant for tax and wealth structuring, but a qualified tax advisor must review your personal circumstances before any recommendation is confirmed.</div>';
+    if(allKeys.indexOf('Grenada_E2')!==-1)html+='<div class="qr-manual-note">Note: The US E-2 pathway referenced is a potential strategy, not a guaranteed outcome. US visa eligibility requires a separate consular assessment.</div>';
+    if(answers.Q6==='A')html+='<div class="qr-manual-note">Based on your urgent timeline, programmes with extended processing backlogs (e.g. Portugal Golden Visa) have been deprioritised.</div>';
+    if(answers.Q7==='A')html+='<div class="qr-manual-note">Based on your preference for zero or minimal physical presence, programmes requiring extended stays (e.g. Andorra, Italian tax residency) have been deprioritised.</div>';
+    document.getElementById('qr-cards').innerHTML=html;
+    document.getElementById('q-results').style.display='block';
+    document.getElementById('quiz-panel').scrollTop=0;
+    document.getElementById('q-bar').style.width='100%';
+    document.getElementById('q-pct').textContent='100%';
+  },1800);
+}
+
+function showContactForm(){
+  document.getElementById('q-results').style.display='none';
+  document.getElementById('q-step-contact').style.display='block';
+  document.getElementById('q-nav').style.display='none';
+  document.getElementById('quiz-panel').scrollTop=0;
+}
+
+function brochureClick(key){
+  var pn=PROGRAMS[key]?PROGRAMS[key].name:'';
+  document.getElementById('brochure-program-hidden').value=pn;
+  document.getElementById('q-contact-step-num').textContent='Get Your Brochure';
+  document.getElementById('q-contact-title').innerHTML='Get your personalised brochure for <span style="font-style:italic;color:var(--gold)">'+pn+'</span>';
+  document.getElementById('q-contact-sub').textContent='Enter your details to receive the detailed programme brochure and suggestion reviewed by our advisory team.';
+  document.getElementById('q-results').style.display='none';
+  document.getElementById('q-step-contact').style.display='block';
+  document.getElementById('q-nav').style.display='none';
+  document.getElementById('quiz-panel').scrollTop=0;
+}
+
+function restartQuiz(){
+  answers={};currentStep=0;
+  document.getElementById('q-results').style.display='none';
+  document.getElementById('q-step-contact').style.display='none';
+  document.getElementById('q-name').value='';
+  document.getElementById('q-email').value='';
+  document.getElementById('q-phone').value='';
+  buildSteps();showStep(0);
+  document.getElementById('q-nav').style.display='flex';
+  document.getElementById('quiz-panel').scrollTop=0;
+}
+
+function submitLeadCapture(){
+  var n=document.getElementById('lc-name').value.trim();
+  var e=document.getElementById('lc-email').value.trim();
+  if(!n||!e){alert('Please enter your name and email to continue.');return;}
+
+  var form=document.getElementById('lead-capture-form');
+  var formData=new FormData(form);
+
+  // Show loading state
+  var btn=form.querySelector('.lc-submit');
+  var origText=btn.textContent;
+  btn.textContent='Submitting...';
+  btn.disabled=true;
+
+  // Submit to Formsubmit.co
+  fetch(form.action,{
+    method:'POST',
+    body:formData,
+    headers:{'Accept':'application/json'}
+  }).then(function(r){
+    return r.json();
+  }).then(function(){
+    btn.textContent=origText;
+    btn.disabled=false;
+    alert('Thank you, '+n+'.\n\nYour Personalized Freedom Plan request has been received. A CTrustGlobal advisor will be in touch at '+e+' shortly.');
+    form.reset();
+  }).catch(function(){
+    btn.textContent=origText;
+    btn.disabled=false;
+    alert('Thank you, '+n+'.\n\nYour Personalized Freedom Plan request has been received. A CTrustGlobal advisor will be in touch at '+e+' shortly.');
+    form.reset();
+  });
+}
+
+function lcSubmit(){
+  submitLeadCapture();
+}
+</script>
+</body>
+</html>
