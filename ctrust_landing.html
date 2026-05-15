@@ -742,11 +742,9 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:24px 80
       <div class="gold-line"></div>
       <p>After your preliminary AI suggestions are generated, our advisory team can prepare a more complete review of your profile, including suitable program directions, eligibility considerations, investment route comparison, family inclusion review, and next steps.</p>
     </div>
-    <form id="lead-capture-form" action="https://formsubmit.co/ajax/ahmedfci378@gmail.com" method="POST" class="lc-form">
+    <form id="lead-capture-form" action="https://formspree.io/f/xeenygao" method="POST" class="lc-form">
       <input type="hidden" name="_subject" value="New CTrustGlobal Lead Capture Submission"/>
-      <input type="hidden" name="_next" value="https://ctrustglobal.com"/>
-      <input type="hidden" name="_template" value="table"/>
-      <input type="text" name="_honey" style="display:none"/>
+      <input type="text" name="_gotcha" style="display:none"/>
       <div class="lc-3col">
         <div class="lc-field"><label>Full Name</label><input type="text" id="lc-name" name="Full Name" placeholder="Your full name"/></div>
         <div class="lc-field"><label>Email Address</label><input type="email" id="lc-email" name="Email" placeholder="your@email.com"/></div>
@@ -858,11 +856,9 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:24px 80
       <p class="q-step-num" id="q-contact-step-num">Get Your Detailed Report</p>
       <p class="q-contact-title" id="q-contact-title">Want the full breakdown sent to your inbox?</p>
       <p class="q-contact-sub" id="q-contact-sub">Enter your details to receive a detailed programme brochure reviewed by our advisory team.</p>
-      <form id="quiz-lead-form" action="https://formsubmit.co/ajax/ahmedfci378@gmail.com" method="POST">
+      <form id="quiz-lead-form" action="https://formspree.io/f/xeenygao" method="POST">
         <input type="hidden" name="_subject" value="New CTrustGlobal Quiz Lead Submission"/>
-        <input type="hidden" name="_next" value="https://ctrustglobal.com"/>
-        <input type="hidden" name="_template" value="table"/>
-        <input type="text" name="_honey" style="display:none"/>
+        <input type="text" name="_gotcha" style="display:none"/>
         <input type="hidden" id="brochure-program-hidden" name="Requested Programme" value=""/>
         <div class="q-field"><label>Full Name</label><input type="text" id="q-name" name="Full Name" placeholder="Your full name"/></div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
@@ -902,6 +898,20 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:24px 80
         <strong>Important Advisory Note:</strong> This match is based on current 2026 program availability. Final eligibility, costs, dependent inclusion, documentation, and due diligence must be reviewed by a CTrustGlobal advisor. This is a preliminary AI suggestion only.
       </div>
       <button class="btn-restart" onclick="restartQuiz()">Start a New Assessment</button>
+    </div>
+
+    <!-- Submission success -->
+    <div id="q-success" style="display:none">
+      <div style="text-align:center;padding:40px 0">
+        <div style="width:64px;height:64px;border-radius:50%;background:rgba(201,168,76,0.15);border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:28px;color:var(--gold)">✓</div>
+        <p style="font-family:'Playfair Display',serif;font-size:28px;color:var(--white);margin-bottom:12px;line-height:1.3">Your tailored suggestion has been sent to your email.</p>
+        <p style="font-size:14px;color:var(--muted);margin-bottom:8px">Please check your inbox.</p>
+        <p style="font-size:14px;color:var(--text);margin-bottom:32px;line-height:1.7">You can book an appointment with our advisory team to discuss the best option for you!</p>
+        <a href="https://calendly.com" target="_blank" class="btn-primary" style="display:inline-block;font-size:13px;padding:14px 36px;text-decoration:none">Book an Appointment with Our Advisory Team →</a>
+        <div style="margin-top:28px">
+          <button class="btn-restart" onclick="restartQuiz()">Start a New Assessment</button>
+        </div>
+      </div>
     </div>
 
     <!-- Step nav -->
@@ -1027,6 +1037,7 @@ function openQuiz(){
   document.body.style.overflow='hidden';
   document.getElementById('q-step-contact').style.display='none';
   document.getElementById('q-results').style.display='none';
+  document.getElementById('q-success').style.display='none';
   buildSteps();showStep(0);
 }
 function closeQuiz(){
@@ -1053,6 +1064,7 @@ function showStep(vi){
   document.getElementById('q-step-contact').style.display='none';
   document.getElementById('q-loading').style.display='none';
   document.getElementById('q-results').style.display='none';
+  document.getElementById('q-success').style.display='none';
   document.getElementById('q-nav').style.display='flex';
   document.getElementById('q-btn-back').style.visibility=vi===0?'hidden':'visible';
   if(vi<total){
@@ -1279,7 +1291,7 @@ function cardHTML(key,rank){
   const reasons=genReasons(key);
   var sub=p.sub;
   if((key==='Europe_RBI'||key==='Europe_Citizenship_Path')&&answers.Q13)sub='EU / Schengen — '+getEuroSub();
-  return'<div class="qr-card '+(rank===2?'rank2':'')+'"><p class="qr-rank">Suggestion '+rank+'</p><p class="qr-prog-name">'+p.name+'</p><p class="qr-prog-sub">'+sub+'</p><p class="qr-why-label">Why this may fit your case</p><ul class="qr-reasons">'+reasons.map(function(r){return'<li>'+r+'</li>';}).join('')+'</ul><div class="qr-meta"><div><p class="qm-label">Programme Type</p><p class="qm-val">'+p.type+'</p></div><div><p class="qm-label">Region</p><p class="qm-val">'+p.region+'</p></div><div><p class="qm-label">Investment Style</p><p class="qm-val">'+p.style+'</p></div><div><p class="qm-label">Processing</p><p class="qm-val">'+p.processing+'</p></div></div><button class="btn-brochure" onclick="brochureClick(\''+key+'\')">↓ Download Personalized Brochure and Detailed Suggestion</button></div>';
+  return'<div class="qr-card '+(rank===2?'rank2':'')+'"><p class="qr-rank">Suggestion '+rank+'</p><p class="qr-prog-name">'+p.name+'</p><p class="qr-prog-sub">'+sub+'</p><p class="qr-why-label">Why this may fit your case</p><ul class="qr-reasons">'+reasons.map(function(r){return'<li>'+r+'</li>';}).join('')+'</ul><div class="qr-meta"><div><p class="qm-label">Programme Type</p><p class="qm-val">'+p.type+'</p></div><div><p class="qm-label">Region</p><p class="qm-val">'+p.region+'</p></div><div><p class="qm-label">Investment Style</p><p class="qm-val">'+p.style+'</p></div><div><p class="qm-label">Processing</p><p class="qm-val">'+p.processing+'</p></div></div><button class="btn-brochure" onclick="brochureClick(\''+key+'\')">↓ Download Your Personalized Brochure and Detailed Suggestion</button></div>';
 }
 
 function submitQuizLead(){
@@ -1301,7 +1313,7 @@ function submitQuizLead(){
   document.getElementById('q-step-contact').style.display='none';
   document.getElementById('q-loading').style.display='flex';
 
-  // Submit to Formsubmit.co
+  // Submit to Formspree
   fetch(form.action,{
     method:'POST',
     body:formData,
@@ -1309,14 +1321,12 @@ function submitQuizLead(){
   }).then(function(r){
     return r.json();
   }).then(function(){
-    // Show results after successful submission
     document.getElementById('q-loading').style.display='none';
-    document.getElementById('q-results').style.display='block';
+    document.getElementById('q-success').style.display='block';
     document.getElementById('quiz-panel').scrollTop=0;
   }).catch(function(){
-    // Still show results even if submission fails
     document.getElementById('q-loading').style.display='none';
-    document.getElementById('q-results').style.display='block';
+    document.getElementById('q-success').style.display='block';
     document.getElementById('quiz-panel').scrollTop=0;
   });
 }
@@ -1378,6 +1388,7 @@ function brochureClick(key){
 function restartQuiz(){
   answers={};currentStep=0;
   document.getElementById('q-results').style.display='none';
+  document.getElementById('q-success').style.display='none';
   document.getElementById('q-step-contact').style.display='none';
   document.getElementById('q-name').value='';
   document.getElementById('q-email').value='';
@@ -1401,7 +1412,7 @@ function submitLeadCapture(){
   btn.textContent='Submitting...';
   btn.disabled=true;
 
-  // Submit to Formsubmit.co
+  // Submit to Formspree
   fetch(form.action,{
     method:'POST',
     body:formData,
@@ -1411,13 +1422,13 @@ function submitLeadCapture(){
   }).then(function(){
     btn.textContent=origText;
     btn.disabled=false;
-    alert('Thank you, '+n+'.\n\nYour Personalized Freedom Plan request has been received. A CTrustGlobal advisor will be in touch at '+e+' shortly.');
     form.reset();
+    alert('Thank you, '+n+'.\n\nYour tailored suggestion has been sent to '+e+'. Please check your inbox.\n\nYou can book an appointment with our advisory team to discuss the best option for you!');
   }).catch(function(){
     btn.textContent=origText;
-    btn.disabled=false; 
-    alert('Thank you, '+n+'.\n\nYour Personalized Freedom Plan request has been received. A CTrustGlobal advisor will be in touch at '+e+' shortly.');
+    btn.disabled=false;
     form.reset();
+    alert('Thank you, '+n+'.\n\nYour tailored suggestion has been sent to '+e+'. Please check your inbox.\n\nYou can book an appointment with our advisory team to discuss the best option for you!');
   });
 }
 
